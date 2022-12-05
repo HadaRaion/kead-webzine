@@ -1,0 +1,17 @@
+{
+	"name": "KEAD Webzine Theme",
+	"version": "1.0.0",
+	"description": "",
+	"author": "Hada Jang",
+	"license": "GPL-2.0-or-later",
+	"main": "index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start"
+	},
+	"keywords": [],
+	"dependencies": {
+		"@wordpress/scripts": "*",
+		"axios": "^0.21.1"
+	}
+}
