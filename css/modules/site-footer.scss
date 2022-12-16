@@ -1,0 +1,95 @@
+.site-footer {
+	.container {
+		border-top: 3px solid #ccc;
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		@include atMedium {
+			flex-wrap: nowrap;
+			flex-direction: column;
+		}
+		@include atSmall {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+		}
+	}
+
+	&__logo {
+		width: 22rem;
+		margin-right: 6rem;
+
+		@include atLarge {
+			width: 18rem;
+			margin-right: 3rem;
+		}
+
+		@include atMedium {
+			margin-right: 0;
+		}
+
+		@include atSmall {
+			width: 14rem;
+		}
+	}
+
+	&__sns {
+		display: flex;
+		gap: 1rem;
+		margin-top: 8px;
+
+		@include atMedium {
+			order: 3;
+			margin-top: 2rem;
+		}
+
+		@include atSmall {
+			width: 100%;
+			margin-top: 1rem;
+			justify-content: space-between;
+			order: 3;
+			gap: 0;
+		}
+	}
+
+	&__wa-mark {
+		aspect-ratio: 17 / 12;
+		background-color: aqua;
+		width: 100px;
+		margin-left: auto;
+
+		// display: none;
+		@include atMedium {
+			width: 80px;
+			margin-left: 0;
+			order: 2;
+			margin-top: 2rem;
+		}
+
+		@include atSmall {
+			margin-top: 1rem;
+		}
+	}
+
+	&__address {
+		display: flex;
+		gap: 2rem;
+		font-style: normal;
+		width: 100%;
+		margin-top: 2rem;
+		margin-bottom: 0.4rem;
+
+		@include atMedium {
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 0 2rem;
+			margin-bottom: 0rem;
+		}
+
+		@include atSmall {
+			margin-top: 1.5rem;
+		}
+	}
+}

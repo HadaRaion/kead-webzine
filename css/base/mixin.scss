@@ -1,17 +1,23 @@
 @mixin atSmall {
-	@media (min-width: 530px) {
-		@content;
-	}
-}
-
-@mixin atSmallMedium {
-	@media (min-width: 767px) {
+	@media (max-width: 640px) {
 		@content;
 	}
 }
 
 @mixin atMedium {
-	@media (min-width: 960px) {
+	@media (max-width: 960px) {
+		@content;
+	}
+}
+
+@mixin atLarge {
+	@media (max-width: 1300px) {
+		@content;
+	}
+}
+
+@mixin atXLarge {
+	@media (max-width: 1400px) {
 		@content;
 	}
 }

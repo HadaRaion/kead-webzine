@@ -1,10 +1,54 @@
-$primary: #f95738;
+$gray: #c3c4c7;
 
 :root {
-	--header-height: 3rem;
-	--nav-height: 56px;
+	--color-part1: #a1634d;
+	--color-part2: #357997;
+	--color-part3: #6c5992;
+	--color-part4: #e48089;
+	--color-bg: #fcf2e4;
+	--header-height: 100px;
 	--layout-margin: 1rem;
-	--layout-max-width: 1318px;
-	--wrapper-width: 345px;
-	--wrapper-height: 642px;
+	--layout-max-width: 1200px;
+}
+
+@include atXLarge {
+	:root {
+		--header-height: 90px;
+	}
+}
+
+@include atLarge {
+	:root {
+		--header-height: 72px;
+		--layout-margin: 3rem;
+	}
+}
+
+@include atMedium {
+	:root {
+		--header-height: 63px;
+		--layout-margin: 2rem;
+	}
+}
+
+@include atSmall {
+	:root {
+		--layout-margin: 1rem;
+	}
+}
+
+.january {
+	--color-part1: #a1634d;
+	--color-part2: #357997;
+	--color-part3: #6c5992;
+	--color-part4: #e48089;
+	--color-bg: #fcf2e4;
+}
+
+.february {
+	--color-part1: brown;
+	--color-part2: darkblue;
+	--color-part3: purple;
+	--color-part4: pink;
+	--color-bg: lightblue;
 }

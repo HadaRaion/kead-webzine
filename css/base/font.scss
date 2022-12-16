@@ -1,0 +1,46 @@
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+	:root {
+		--step--2: clamp(0.69rem, calc(0.65rem + 0.2vw), 0.8rem); // 12 - 11
+		--step--1: clamp(0.83rem, calc(0.76rem + 0.32vw), 1rem); // 16 - 13
+		--step-0: clamp(1rem, calc(0.89rem + 0.48vw), 1.25rem); // 20 - 16
+		--step-1: clamp(1.2rem, calc(1.04rem + 0.69vw), 1.56rem); // 25 - 19
+		--step-2: clamp(1.44rem, calc(1.22rem + 0.98vw), 1.95rem); // 32 - 23
+		--step-3: clamp(1.73rem, calc(1.42rem + 1.36vw), 2.44rem); // 40 - 28
+		--step-4: clamp(2.07rem, calc(1.65rem + 1.86vw), 3.05rem); // 48 - 33
+		--step-5: clamp(2.49rem, calc(1.92rem + 2.53vw), 3.82rem); // 62  - 40
+
+		// --step--1: clamp(0.8rem, 0.26vw + 0.74rem, 0.94rem);
+		// --step-0: clamp(1rem, 0.48vw + 0.89rem, 1.25rem);
+		// --step-1: clamp(1.25rem, 0.79vw + 1.07rem, 1.67rem);
+		// --step-1: clamp(1.25rem, 1.1428571428571428rem + 0.4761904761904762vw, 1.5rem);
+		// --step-2: clamp(1.56rem, 1.25vw + 1.28rem, 2.22rem);
+		// --step-3: clamp(1.95rem, 1.92vw + 1.52rem, 2.96rem);
+		// --step-4: clamp(2.44rem, 2.87vw + 1.8rem 3.95rem);
+		// --step-5: clamp(3.05rem, 4.21vw + 2.1rem, 5.26rem);
+	}
+}
+
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+	:root {
+		--step--1: 0.8rem;
+		--step-0: 1rem;
+		--step-1: 1.25rem;
+		--step-2: 1.56rem;
+		--step-3: 1.95rem;
+		--step-4: 2.44rem;
+		--step-5: 3.05rem;
+	}
+	@media screen and (min-width: 1100px) {
+		:root {
+			--step--1: 0.94rem;
+			--step-0: 1.25rem;
+			--step-1: 1.67rem;
+			--step-2: 2.22rem;
+			--step-3: 2.96rem;
+			--step-4: 3.95rem;
+			--step-5: 5.26rem;
+		}
+	}
+}

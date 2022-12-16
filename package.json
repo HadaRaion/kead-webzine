@@ -1,5 +1,5 @@
 {
-	"name": "KEAD Webzine Theme",
+	"name": "kead-webzine-theme",
 	"version": "1.0.0",
 	"description": "",
 	"author": "Hada Jang",
@@ -7,7 +7,8 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "wp-scripts build",
-		"start": "wp-scripts start"
+		"start": "wp-scripts start",
+		"dev": "wp-scripts start --hot"
 	},
 	"keywords": [],
 	"dependencies": {

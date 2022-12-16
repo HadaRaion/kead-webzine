@@ -1,0 +1,8 @@
+main,
+footer {
+	width: calc(100% - var(--header-height));
+
+	@include atLarge {
+		width: 100%;
+	}
+}

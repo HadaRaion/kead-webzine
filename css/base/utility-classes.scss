@@ -1,35 +1,10 @@
 .container {
-	max-width: 1300px;
-	margin: 0 auto;
-	padding: 0 16px;
-	position: relative;
-}
-
-.container--narrow {
-	max-width: 960px;
-}
-
-.p-top-small {
-	padding-top: 1rem;
-}
-.p-top-large {
-	padding-top: 1.6rem;
-}
-.p-bottom-large {
-	padding-bottom: 1.6rem;
-}
-
-@include atSmall {
-	.p-top-large {
-		padding-top: 3.5rem;
-	}
-	.p-bottom-large {
-		padding-bottom: 3.5rem;
-	}
-}
-
-.no-margin {
-	margin: 0;
+	width: 100%;
+	max-width: var(--layout-max-width);
+	padding-left: var(--layout-margin);
+	padding-right: var(--layout-margin);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .t-left {
@@ -42,27 +17,101 @@
 	text-align: center;
 }
 
-.t-small {
-	font-size: 0.85rem;
+.font-size-h1 {
+	font-size: var(--step-5);
 }
 
-.push-right {
-	margin-right: 20px;
+.font-size-h2 {
+	font-size: var(--step-4);
 }
 
-.container:before,
-.container:after,
-.group:before,
-.group:after {
-	content: ' ';
-	display: table;
+.font-size-xl {
+	font-size: var(--step-3);
 }
 
-.container:after,
-.group:after {
-	clear: both;
+.font-size-lg {
+	font-size: var(--step-2);
 }
 
-.hide {
-	display: none;
+.font-size-md {
+	font-size: var(--step-1);
+	letter-spacing: -0.02rem;
 }
+
+.font-size-base {
+	font-size: var(--step-0);
+}
+
+.font-size-sm {
+	font-size: var(--step--1);
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+	width: 1px;
+	height: 1px;
+	border: 0;
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.fix-position {
+	position: fixed;
+}
+
+@include atLarge {
+	.line-break {
+		display: block;
+	}
+}
+
+// .container:before,
+// .container:after,
+// .group:before,
+// .group:after {
+// 	content: ' ';
+// 	display: table;
+// }
+
+// .container:after,
+// .group:after {
+// 	clear: both;
+// }
+
+// .hide {
+// 	display: none;
+// }
+
+// .container--narrow {
+// 	max-width: 960px;
+// }
+
+// .p-top-small {
+// 	padding-top: 1rem;
+// }
+// .p-top-large {
+// 	padding-top: 1.6rem;
+// }
+// .p-bottom-large {
+// 	padding-bottom: 1.6rem;
+// }
+
+// @include atSmall {
+// 	.p-top-large {
+// 		padding-top: 3.5rem;
+// 	}
+// 	.p-bottom-large {
+// 		padding-bottom: 3.5rem;
+// 	}
+// }
+
+// .t-small {
+// 	font-size: 0.85rem;
+// }
+
+// .push-right {
+// 	margin-right: 20px;
+// }
