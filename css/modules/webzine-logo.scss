@@ -1,0 +1,57 @@
+.kead-webzine-logo {
+	h5 {
+		font-size: 14px;
+		padding-left: 3px;
+
+		@include atMedium {
+			font-size: 12px;
+		}
+
+		@include atSmall {
+			font-size: 10px;
+		}
+	}
+
+	&__img {
+		width: 260px;
+		margin-top: 0.7rem;
+
+		@include atMedium {
+			width: 220px;
+			margin-top: 0.7rem;
+		}
+
+		@include atSmall {
+			width: 180px;
+			margin-top: 0.7rem;
+		}
+	}
+}
+
+.part-logo {
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	overflow: hidden;
+
+	&--sm {
+		width: 64px;
+		height: 64px;
+	}
+
+	&--1 {
+		background-color: var(--color-part1);
+	}
+
+	&--2 {
+		background-color: var(--color-part2);
+	}
+
+	&--3 {
+		background-color: var(--color-part3);
+	}
+
+	&--4 {
+		background-color: var(--color-part4);
+	}
+}

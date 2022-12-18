@@ -85,9 +85,9 @@
   <nav class="site-nav">
     <div class="nav">
       <div class="nav__left">
-        <div class="nav__left__title">
+        <div class="nav__left__title kead-webzine-logo">
           <h5 class="headline--5">함께 일하는 세상을 만듭니다.</h5>
-          <div class="nav__left__title__logo">
+          <div class="kead-webzine-logo__img">
             <img src="<?php echo get_theme_file_uri('/images/logos/logo-' . $thisMonth . '.svg'); ?>"
               alt="장애인과 일터 1월호 로고">
           </div>
@@ -100,20 +100,22 @@
               src=”<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>” />
           </div>
           <div class="nav__left__cover__links">
-            <a class="btn" target="_blank"
-              href="<?php echo get_theme_file_uri('/pdf/kead-' . $thisMonth . '.pdf'); ?>">E-BOOK
-              보기
-              <svg viewBox="0 0 12 19">
+            <a class="btn btn--sm" target="_blank" title="새창에서 지난호 pdf 열기"
+              href="<?php echo get_theme_file_uri('/pdf/kead-' . $thisMonth . '.pdf'); ?>">
+              <span>E-BOOK 보기</span>
+              <svg viewBox="0 0 12 19" aria-hidden="true">
                 <use xlink:href="#icon-arrow"></use>
               </svg>
             </a>
-            <a class="btn" href="">구독신청하기
-              <svg viewBox="0 0 12 19">
+            <a class="btn btn--sm" href="<?php echo site_url('/subscribe'); ?>">
+              <span>구독신청하기</span>
+              <svg viewBox="0 0 12 19" aria-hidden="true">
                 <use xlink:href="#icon-arrow"></use>
               </svg>
             </a>
-            <a class="btn" href="">지난호 보기
-              <svg viewBox="0 0 12 19">
+            <a class="btn btn--sm" href="<?php echo site_url('/previous'); ?>">
+              <span>지난호 보기</span>
+              <svg viewBox="0 0 12 19" aria-hidden="true">
                 <use xlink:href="#icon-arrow"></use>
               </svg>
             </a>
@@ -125,7 +127,7 @@
       <div class="nav__right">
         <ul class="cat-list">
           <li>
-            <div class="part-logo part-logo--sm part-1"></div>
+            <div class="part-logo part-logo--sm part-logo--1"></div>
             <div class="menu">
               <h1 class="font-size-md">공감, 두드리다</h1>
 
@@ -148,7 +150,7 @@
           </li>
 
           <li>
-            <div class="part-logo part-logo--sm part-2"></div>
+            <div class="part-logo part-logo--sm part-logo--2"></div>
             <div class="menu">
               <h1 class="font-size-md">공감, 만나다</h1>
 
@@ -170,7 +172,7 @@
           </li>
 
           <li>
-            <div class="part-logo part-logo--sm part-3"></div>
+            <div class="part-logo part-logo--sm part-logo--3"></div>
             <div class="menu">
               <h1 class="font-size-md">공감, 번지다</h1>
 
@@ -192,7 +194,7 @@
           </li>
 
           <li>
-            <div class="part-logo part-logo--sm part-4"></div>
+            <div class="part-logo part-logo--sm part-logo--4"></div>
             <div class="menu">
               <h1 class="font-size-md">EVENT</h1>
 

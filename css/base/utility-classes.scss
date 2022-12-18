@@ -7,6 +7,10 @@
 	margin-right: auto;
 }
 
+.serif {
+	font-family: 'Noto Serif KR', serif;
+}
+
 .t-left {
 	text-align: left;
 }
@@ -15,6 +19,14 @@
 }
 .t-center {
 	text-align: center;
+}
+
+.t-500 {
+	font-weight: 500;
+}
+
+.t-bold {
+	font-weight: bold;
 }
 
 .font-size-h1 {
@@ -35,7 +47,6 @@
 
 .font-size-md {
 	font-size: var(--step-1);
-	letter-spacing: -0.02rem;
 }
 
 .font-size-base {
@@ -44,6 +55,10 @@
 
 .font-size-sm {
 	font-size: var(--step--1);
+}
+
+.font-white {
+	color: #fff;
 }
 
 .visually-hidden {
@@ -62,9 +77,28 @@
 	position: fixed;
 }
 
-@include atLarge {
+@include atMedium {
 	.line-break {
 		display: block;
+	}
+}
+
+.p-top {
+	padding-top: 4rem;
+}
+.p-top-large {
+	padding-top: 8rem;
+}
+.p-bottom-large {
+	padding-bottom: 1.6rem;
+}
+
+@include atSmall {
+	.p-top-large {
+		padding-top: 3.5rem;
+	}
+	.p-bottom-large {
+		padding-bottom: 3.5rem;
 	}
 }
 
@@ -87,25 +121,6 @@
 
 // .container--narrow {
 // 	max-width: 960px;
-// }
-
-// .p-top-small {
-// 	padding-top: 1rem;
-// }
-// .p-top-large {
-// 	padding-top: 1.6rem;
-// }
-// .p-bottom-large {
-// 	padding-bottom: 1.6rem;
-// }
-
-// @include atSmall {
-// 	.p-top-large {
-// 		padding-top: 3.5rem;
-// 	}
-// 	.p-bottom-large {
-// 		padding-bottom: 3.5rem;
-// 	}
 // }
 
 // .t-small {

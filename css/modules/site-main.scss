@@ -6,3 +6,9 @@ footer {
 		width: 100%;
 	}
 }
+
+main {
+	@include atLarge {
+		margin-top: var(--header-height);
+	}
+}

@@ -1,0 +1,209 @@
+.main-page {
+	.banner {
+		height: calc(var(--vh, 1vh) * 100);
+		background-size: cover;
+		background-position: center 30%;
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		.kead-webzine-logo {
+			position: absolute;
+			top: 3rem;
+			left: 3rem;
+
+			@include atMedium {
+				top: calc(var(--layout-margin) * 2);
+				left: var(--layout-margin);
+			}
+		}
+
+		.cover-story {
+			width: 100%;
+			margin-bottom: 10%;
+
+			@include atMedium {
+				margin-bottom: 40%;
+			}
+
+			@include atSmall {
+				margin-bottom: 65%;
+			}
+
+			& > h1 {
+				font-size: 4rem;
+
+				@include atMedium {
+					font-size: 2.4rem;
+				}
+
+				@include atSmall {
+					font-size: 1.8rem;
+				}
+			}
+
+			&--desktop {
+				display: block;
+
+				@include atMedium {
+					display: none;
+				}
+			}
+
+			&--mobile {
+				display: none;
+				@include atMedium {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.main-links {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 3rem;
+
+			@include atLarge {
+				padding: 0;
+			}
+
+			@include atSmall {
+				flex-direction: column;
+				align-items: center;
+
+				& > li {
+					margin-bottom: 1rem;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			li {
+				max-width: 33%;
+			}
+		}
+	}
+
+	.article {
+		&__title {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+		}
+
+		&__contents {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+
+			gap: 2rem;
+
+			@include atMedium {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			@include atSmall {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&.part1 {
+			.post__category,
+			.post__title {
+				background-color: var(--color-part1);
+			}
+		}
+
+		&.part2 {
+			.post__category,
+			.post__title {
+				background-color: var(--color-part2);
+			}
+
+			.article__contents > a:first-child {
+				grid-row: span 2;
+
+				.post__thumbnail {
+					aspect-ratio: 368 / 696;
+				}
+
+				@include atSmall {
+					grid-row: span 1;
+
+					.post__thumbnail {
+						aspect-ratio: 4 / 3;
+					}
+				}
+			}
+
+			.article__contents > a:last-child {
+				grid-column: span 2;
+
+				.post__thumbnail {
+					aspect-ratio: 768 / 276;
+				}
+
+				@include atSmall {
+					grid-column: span 1;
+
+					.post__thumbnail {
+						aspect-ratio: 4 / 3;
+					}
+				}
+			}
+		}
+
+		&.part3 {
+			.post__category,
+			.post__title {
+				background-color: var(--color-part3);
+			}
+		}
+	}
+
+	.post {
+		article {
+			position: relative;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		&__category {
+			position: absolute;
+			top: 1rem;
+			left: 1rem;
+			padding: 0 2rem;
+			border-radius: 999em;
+		}
+
+		&__thumbnail {
+			width: 100%;
+			aspect-ratio: 4 / 3;
+			overflow: hidden;
+
+			img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__title {
+			padding: 1rem;
+			flex: 1;
+
+			h2 {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+		}
+	}
+}

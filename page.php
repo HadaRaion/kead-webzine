@@ -11,7 +11,7 @@
   $withArticles = new WP_Query(array(
     'posts_per_page' => 6,
     'post_type' => $post_slug,
-    'category_name' =>'wave',
+    'category_name' =>'part1',
   ));
 
   while($withArticles->have_posts()) {

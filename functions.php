@@ -19,10 +19,16 @@ add_action('wp_enqueue_scripts', 'kead_files');
 function kead_features() {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
-  // add_image_size('kead-main', 904, 508, true);
-  // add_image_size('kead-works', 467, 262, true);
-
+  add_image_size('kead-thumbnail', 380, 285, true);
+  add_image_size('kead-thumbnail-2x', 760, 570, true);
+  // add_image_size('kead-thumbnail-long', 380, 680, true);
+  // add_image_size('kead-thumbnail-long-2x ', 760, 1360, true);
+  // add_image_size('kead-thumbnail-wide', 380, 285, true);
+  // add_image_size('kead-thumbnail-wide-2x ', 760, 570, true);
 }
+
+// background-image: image-set( "foo.png" 1x, "foo-2x.png" 2x);
+
 
 add_action('after_setup_theme', 'kead_features');
 
