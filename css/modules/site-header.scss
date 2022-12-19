@@ -10,7 +10,7 @@
 	@include atLarge {
 		width: 100%;
 		height: var(--header-height);
-		background-color: #393431;
+		background-color: $darkBrown;
 	}
 
 	.container {

@@ -72,6 +72,7 @@
 	}
 
 	&--circle {
+		display: block;
 		width: 3rem;
 		height: 3rem;
 		border-radius: 50%;
@@ -91,5 +92,10 @@
 		background-color: $gray;
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+
+	&--function {
+		background-color: #d7702b;
+		background-size: cover;
 	}
 }

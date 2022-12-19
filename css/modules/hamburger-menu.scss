@@ -1,7 +1,7 @@
 .hamburger-menu {
 	--bar-width: 44px;
-	--bar-height: 8px;
-	--position-md: 18px;
+	--bar-height: 6px;
+	--position-md: 16px;
 
 	@include atLarge {
 		--bar-width: 40px;
@@ -26,7 +26,7 @@
 	overflow: hidden;
 	position: relative;
 	transform: rotate(0deg);
-	transition: 0.5s ease-in-out;
+	// transition: 0.5s ease-in-out;
 	cursor: pointer;
 
 	span {
@@ -38,7 +38,7 @@
 		opacity: 1;
 		left: 0;
 		transform: rotate(0deg);
-		transition: 0.25s ease-in-out;
+		// transition: 0.25s ease-in-out;
 	}
 
 	span:nth-child(1) {

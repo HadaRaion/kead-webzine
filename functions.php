@@ -21,16 +21,32 @@ function kead_features() {
   add_theme_support('post-thumbnails');
   add_image_size('kead-thumbnail', 380, 285, true);
   add_image_size('kead-thumbnail-2x', 760, 570, true);
-  // add_image_size('kead-thumbnail-long', 380, 680, true);
-  // add_image_size('kead-thumbnail-long-2x ', 760, 1360, true);
-  // add_image_size('kead-thumbnail-wide', 380, 285, true);
-  // add_image_size('kead-thumbnail-wide-2x ', 760, 570, true);
+  add_image_size('kead-thumbnail-long', 380, 680, true);
+  add_image_size('kead-thumbnail-long-2x ', 760, 1360, true);
+  add_image_size('kead-thumbnail-wide', 380, 285, true);
+  add_image_size('kead-thumbnail-wide-2x ', 760, 570, true);
 }
 
-// background-image: image-set( "foo.png" 1x, "foo-2x.png" 2x);
-
-
 add_action('after_setup_theme', 'kead_features');
+
+
+
+function pageBanner($title = NULL) {
+  
+  if (!$title) {
+    $title = get_the_title();
+  }
+  ?>
+
+  <div class="page-banner">
+    <div class="page-banner__logo">
+      <img src="<?php echo get_theme_file_uri('/images/logos/kead-webzine-logo.svg'); ?>" alt="장애인과 일터 로고">
+    </div>
+    <h1 class="page-banner__title"><?php echo $title ?></h1>
+  </div>
+
+<?php }
+
 
 //Redirect subscriber accounts out of admin and onto homepage
 add_action('admin_init', 'redirectSubsToFrontend');

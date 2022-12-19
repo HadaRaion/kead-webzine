@@ -3,6 +3,7 @@
   $post_slug = $post->post_name;
 
   get_header( '', array( 'month' => $post_slug ) );
+  pageBanner('구독신청')
 ?>
 
 <main id="contents">

@@ -10,15 +10,9 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ "./css/style.scss");
-/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/MobileMenu */ "./src/modules/MobileMenu.js");
 
 
-// Our modules / classes
-
-
-// Instantiate a new object using our modules/classes
-// const mobileMenu = new MobileMenu();
-
+// Menu
 const menuBtn = document.querySelector('.hamburger-menu');
 const menu = document.querySelector('.site-nav');
 const exitMenu = document.querySelector('.alert-exit-menu');
@@ -33,34 +27,42 @@ exitMenu.addEventListener('focus', () => {
   document.querySelector(body).classList.remove('fix-position');
 });
 
-/***/ }),
-
-/***/ "./src/modules/MobileMenu.js":
-/*!***********************************!*\
-  !*** ./src/modules/MobileMenu.js ***!
-  \***********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-class MobileMenu {
-  constructor() {
-    // this.menu = document.querySelector(".site-header__menu")
-    // this.openButton = document.querySelector(".site-header__menu-trigger")
-    // this.events()
-  }
-  events() {
-    console.log('working');
-    // this.openButton.addEventListener("click", () => this.openMenu())
-  }
-
-  // openMenu() {
-  //   this.openButton.classList.toggle("fa-bars")
-  //   this.openButton.classList.toggle("fa-window-close")
-  //   this.menu.classList.toggle("site-header__menu--active")
-  // }
+// Audio play
+const audioPlayBtn = document.querySelector('.kead-audio__btn');
+const audioPlayer = document.querySelector('.kead-audio__player');
+if (audioPlayBtn) {
+  audioPlayBtn.addEventListener('click', () => {
+    audioPlayer.paused ? audioPlayer.play() : audioPlayer.pause();
+  });
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (MobileMenu);
+// Copy URL
+const copyUrlBtn = document.querySelector('.btn--copy-url');
+copyUrlBtn && copyUrlBtn.addEventListener('click', () => copyURL());
+function copyURL() {
+  let currentUrl = window.location.href;
+  navigator.clipboard.writeText(currentUrl).then(res => {
+    alert('URL이 복사 되었습니다. 원하시는 곳에 붙여넣기 해 주세요.');
+  });
+}
+const toTopBtn = document.querySelector('.btn--go-to-top');
+toTopBtn && toTopBtn.addEventListener('click', () => topFunction());
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+window.onscroll = function () {
+  scrollFunction();
+};
+const scrollTopBtn = document.querySelector('.scroll-to-top');
+scrollTopBtn && scrollTopBtn.addEventListener('click', () => topFunction());
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopBtn.classList.add('active');
+  } else {
+    scrollTopBtn.classList.remove('active');
+  }
+}
 
 /***/ }),
 

@@ -1,0 +1,40 @@
+.site-side {
+	position: fixed;
+	top: 12rem;
+	right: calc(var(--header-height) + 3vw);
+
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	@include atLarge {
+		display: none;
+	}
+}
+
+.scroll-to-top {
+	width: 3.2rem;
+	height: 3.2rem;
+	border-radius: 50%;
+	background-color: #d7702b;
+	background-size: cover;
+	position: fixed;
+	right: 10%;
+	bottom: 5%;
+	transition: 0.5s;
+	opacity: 0;
+
+	display: none;
+
+	@include atLarge {
+		display: block;
+	}
+
+	&.active {
+		opacity: 1;
+	}
+
+	@include atMedium {
+		right: calc(var(--layout-margin) + 2%);
+	}
+}
