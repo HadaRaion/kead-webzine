@@ -1,9 +1,22 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package kead-theme
+ */
+
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
 <head>
-  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <?php wp_head(); ?>
 </head>
 
@@ -72,7 +85,7 @@
 
           <?php else: ?>
 
-          <a href="<?php echo site_url($thisMonth) ?>">
+          <a href="<?php echo site_url($thisMonth) ?>" title="장애인과 일터 홈으로 이동">
             <span class="link-text visually-hidden">장애인과 일터 <?php echo $args['month']; ?> 홈</span>
           </a>
 
@@ -100,24 +113,14 @@
               src=”<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>” />
           </div>
           <div class="nav__left__cover__links">
-            <a class="btn btn--sm" target="_blank" title="새창에서 지난호 pdf 열기"
-              href="<?php echo get_theme_file_uri('/pdf/kead-' . $thisMonth . '.pdf'); ?>">
+            <a class="btn btn--sm" href="<?php echo site_url('pdf/kead-' . $thisMonth . '.pdf'); ?>" target="_blank" title="새창에서 지난호 pdf 열기"> 
               <span>E-BOOK 보기</span>
-              <svg viewBox="0 0 12 19" aria-hidden="true">
-                <use xlink:href="#icon-arrow"></use>
-              </svg>
             </a>
             <a class="btn btn--sm" href="<?php echo site_url('/subscribe'); ?>">
               <span>구독신청하기</span>
-              <svg viewBox="0 0 12 19" aria-hidden="true">
-                <use xlink:href="#icon-arrow"></use>
-              </svg>
             </a>
             <a class="btn btn--sm" href="<?php echo site_url('/previous'); ?>">
               <span>지난호 보기</span>
-              <svg viewBox="0 0 12 19" aria-hidden="true">
-                <use xlink:href="#icon-arrow"></use>
-              </svg>
             </a>
           </div>
         </div>
@@ -127,9 +130,9 @@
       <div class="nav__right">
         <ul class="cat-list">
           <li>
-            <div class="part-logo part-logo--sm part-logo--1"></div>
+            <div class="part-logo part-logo--sm part-logo--1" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part1.svg'); ?>);"></div>
             <div class="menu">
-              <h1 class="font-size-md">공감, 두드리다</h1>
+              <h1 class="text-3xl">공감, 두드리다</h1>
 
               <ul class="menu-list">
                 <?php 
@@ -140,7 +143,7 @@
                   $subCategory =  get_the_category()[0]->cat_name;
                 ?>
                 <li>
-                  <a class="font-size-base" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
+                  <a class="text-2xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
                 </li>
                 <?php } wp_reset_postdata();                   
               ?>
@@ -150,9 +153,9 @@
           </li>
 
           <li>
-            <div class="part-logo part-logo--sm part-logo--2"></div>
+            <div class="part-logo part-logo--sm part-logo--2" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part2.svg'); ?>);"></div>
             <div class="menu">
-              <h1 class="font-size-md">공감, 만나다</h1>
+              <h1 class="text-3xl">공감, 만나다</h1>
 
               <ul class="menu-list">
                 <?php 
@@ -163,7 +166,7 @@
                   $subCategory =  get_the_category()[0]->cat_name;
                 ?>
                 <li>
-                  <a class="font-size-base" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
+                  <a class="text-2xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
                 </li>
                 <?php } wp_reset_postdata();                   
               ?>
@@ -172,9 +175,9 @@
           </li>
 
           <li>
-            <div class="part-logo part-logo--sm part-logo--3"></div>
+            <div class="part-logo part-logo--sm part-logo--3" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part3.svg'); ?>);"></div>
             <div class="menu">
-              <h1 class="font-size-md">공감, 번지다</h1>
+              <h1 class="text-3xl">공감, 번지다</h1>
 
               <ul class="menu-list">
                 <?php 
@@ -185,7 +188,7 @@
                   $subCategory =  get_the_category()[0]->cat_name;
                 ?>
                 <li>
-                  <a class="font-size-base" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
+                  <a class="text-2xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
                 </li>
                 <?php } wp_reset_postdata();                   
               ?>
@@ -194,9 +197,9 @@
           </li>
 
           <li>
-            <div class="part-logo part-logo--sm part-logo--4"></div>
+            <div class="part-logo part-logo--sm part-logo--4" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part4.svg'); ?>);"></div>
             <div class="menu">
-              <h1 class="font-size-md">EVENT</h1>
+              <h1 class="text-3xl">EVENT</h1>
 
               <ul class="menu-list">
                 <?php 
@@ -207,7 +210,7 @@
                   $subCategory =  get_the_category()[0]->cat_name;
                 ?>
                 <li>
-                  <a class="font-size-base" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
+                  <a class="text-2xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
                 </li>
                 <?php } wp_reset_postdata();                   
               ?>
@@ -219,11 +222,3 @@
       </div>
   </nav>
   <button class="alert-exit-menu visually-hidden">전체화면 메뉴를 벗어나 메뉴가 닫혔습니다.</button>
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    style="display: none;">
-    <defs>
-      <g id="icon-arrow">
-        <path d="M2.3,0,0,2.32,6.984,9.378l-6.928,7,2.3,2.321,9.225-9.322Z" fill="#fff" />
-      </g>
-    </defs>
-  </svg>

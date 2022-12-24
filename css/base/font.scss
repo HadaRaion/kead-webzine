@@ -1,46 +1,150 @@
-/* Fluid font size variables, for browsers that support clamp */
-@supports (font-size: clamp(1rem, 1vw, 1rem)) {
-	:root {
-		--step--2: clamp(0.69rem, calc(0.65rem + 0.2vw), 0.8rem); // 12 - 11
-		--step--1: clamp(0.83rem, calc(0.76rem + 0.32vw), 1rem); // 16 - 13
-		--step-0: clamp(1rem, calc(0.89rem + 0.48vw), 1.25rem); // 20 - 16
-		--step-1: clamp(1.2rem, calc(1.04rem + 0.69vw), 1.56rem); // 25 - 19  5
-		--step-2: clamp(1.44rem, calc(1.22rem + 0.98vw), 1.95rem); // 32 - 23  4
-		--step-3: clamp(1.73rem, calc(1.42rem + 1.36vw), 2.44rem); // 40 - 28  3
-		--step-4: clamp(2.07rem, calc(1.65rem + 1.86vw), 3.05rem); // 48 - 33  2
-		--step-5: clamp(2.49rem, calc(1.92rem + 2.53vw), 3.82rem); // 62  - 40 1
+.font-serif {
+	font-family: 'Noto Serif KR', serif;
+}
 
-		// --step--1: clamp(0.8rem, 0.26vw + 0.74rem, 0.94rem);
-		// --step-0: clamp(1rem, 0.48vw + 0.89rem, 1.25rem);
-		// --step-1: clamp(1.25rem, 0.79vw + 1.07rem, 1.67rem);
-		// --step-1: clamp(1.25rem, 1.1428571428571428rem + 0.4761904761904762vw, 1.5rem);
-		// --step-2: clamp(1.56rem, 1.25vw + 1.28rem, 2.22rem);
-		// --step-3: clamp(1.95rem, 1.92vw + 1.52rem, 2.96rem);
-		// --step-4: clamp(2.44rem, 2.87vw + 1.8rem 3.95rem);
-		// --step-5: clamp(3.05rem, 4.21vw + 2.1rem, 5.26rem);
+.font-400 {
+	font-weight: 400;
+}
+
+.font-500 {
+	font-weight: 500;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.font-white {
+	color: #fff;
+}
+
+.color-part2 {
+	color: var(--color-part2);
+}
+
+.color-part3 {
+	color: var(--color-part3);
+}
+
+.t-left {
+	text-align: left;
+}
+
+.t-right {
+	text-align: right;
+}
+
+.t-center {
+	text-align: center;
+}
+
+.text-xs {
+	font-size: 0.75rem; /* 12px */
+
+	@include atSmall {
+		font-size: 0.625rem; /* 10px */
 	}
 }
 
-/* Fallback variables for browsers that don't support clamp */
-@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
-	:root {
-		--step--1: 0.8rem;
-		--step-0: 1rem;
-		--step-1: 1.25rem;
-		--step-2: 1.56rem;
-		--step-3: 1.95rem;
-		--step-4: 2.44rem;
-		--step-5: 3.05rem;
+.text-sm {
+	font-size: 0.875rem; /* 14px */
+
+	@include atSmall {
+		font-size: 0.75rem; /* 12px */
 	}
-	@media screen and (min-width: 1100px) {
-		:root {
-			--step--1: 0.94rem;
-			--step-0: 1.25rem;
-			--step-1: 1.67rem;
-			--step-2: 2.22rem;
-			--step-3: 2.96rem;
-			--step-4: 3.95rem;
-			--step-5: 5.26rem;
-		}
+}
+
+.text-base {
+	font-size: 1rem; /* 16px */
+
+	@include atSmall {
+		font-size: 0.875rem; /* 14px */
+	}
+}
+
+.text-lg {
+	font-size: 1.125rem; /* 18px */
+
+	@include atSmall {
+		font-size: 0.938rem; /* 15px */
+	}
+}
+
+.post .text-xl {
+	line-height: 1.8;
+}
+
+.text-xl {
+	font-size: 1.25rem; /* 20px */
+
+	@include atSmall {
+		font-size: 1rem; /* 16px */
+	}
+}
+
+.text-2xl {
+	font-size: 1.5rem; /* 24px */
+
+	@include atSmall {
+		font-size: 1.125rem; /* 18px */
+		// font-size: 1.25rem; /* 20px */
+	}
+}
+
+.text-3xl {
+	font-size: 1.75rem; /* 28px */
+
+	@include atSmall {
+		font-size: 1.5rem; /* 24px */
+	}
+}
+
+.text-4xl {
+	font-size: 2rem; /* 32px */
+
+	@include atSmall {
+		font-size: 1.75rem; /* 28px */
+	}
+}
+
+.text-5xl {
+	font-size: 2.5rem; /* 40px */
+	line-height: 1;
+
+	@include atSmall {
+		font-size: 2rem; /* 32px */
+	}
+}
+
+.text-6xl {
+	font-size: 3rem; /* 48px */
+	line-height: 3.6rem;
+
+	@include atSmall {
+		font-size: 2.25rem; /* 36px */
+		line-height: 2.6rem;
+	}
+}
+
+.text-7xl {
+	font-size: 3.75rem; /* 60px */
+	line-height: 1;
+
+	@include atSmall {
+		font-size: 2.5rem; /* 48px */
+	}
+}
+
+.text-8xl {
+	font-size: 4.5rem; /* 72px */
+	line-height: 1;
+}
+
+.text-9xl {
+	font-size: 6rem; /* 96px */
+	line-height: 1;
+
+	@include atSmall {
+		font-size: 4rem; /* 48px */
 	}
 }

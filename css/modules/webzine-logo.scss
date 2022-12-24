@@ -33,10 +33,26 @@
 	height: 96px;
 	border-radius: 50%;
 	overflow: hidden;
+	background-size: cover;
+
+	@include atMedium {
+		width: 80px;
+		height: 80px;
+	}
+
+	@include atSmall {
+		width: 64px;
+		height: 64px;
+	}
 
 	&--sm {
 		width: 64px;
 		height: 64px;
+
+		@include atSmall {
+			width: 48px;
+			height: 48px;
+		}
 	}
 
 	&--1 {

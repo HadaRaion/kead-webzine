@@ -1,5 +1,6 @@
 $gray: #c3c4c7;
 $darkBrown: #393431;
+$red: #ff0000;
 
 :root {
 	--color-part1: #a1634d;
@@ -10,6 +11,13 @@ $darkBrown: #393431;
 	--header-height: 100px;
 	--layout-margin: 1rem;
 	--layout-max-width: 1200px;
+}
+
+:root {
+	--wp--preset--color--color-part1: #a1634d;
+	--wp--preset--color--color-part2: #357997;
+	--wp--preset--color--color-part3: #6c5992;
+	--wp--preset--color--color-part4: #e48089;
 }
 
 @include atXLarge {
@@ -52,4 +60,52 @@ $darkBrown: #393431;
 	--color-part3: purple;
 	--color-part4: pink;
 	--color-bg: lightblue;
+}
+
+.has-color-part-1-background-color {
+	background-color: var(--color-part1);
+}
+
+.has-color-part-1-color {
+	color: var(--color-part1);
+}
+
+.has-color-part-1-border-color {
+	color: var(--color-part1);
+}
+
+.has-color-part-2-background-color {
+	background-color: var(--color-part2);
+}
+
+.has-color-part-2-color {
+	color: var(--color-part2);
+}
+
+.has-color-part-2-border-color {
+	color: var(--color-part2);
+}
+
+.has-color-part-3-background-color {
+	background-color: var(--color-part3);
+}
+
+.has-color-part-3-color {
+	color: var(--color-part3);
+}
+
+.has-color-part-3-border-color {
+	color: var(--color-part3);
+}
+
+.has-color-part-4-background-color {
+	background-color: var(--color-part4);
+}
+
+.has-color-part-4-color {
+	color: var(--color-part4);
+}
+
+.has-color-part-4-border-color {
+	color: var(--color-part4);
 }

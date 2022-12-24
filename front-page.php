@@ -33,18 +33,18 @@ $args3 = array(
 			</div>
   	</div>
 		<div class="cover-story cover-story--desktop font-white t-center">
-				<div class="font-size-base t-500">COVER STORY</div>
-				<h1 class="serif">두근두근 ‘새로운 시작이야’</h1>
-				<p class="font-size-base t-500">
+				<div class="text-xl t-500">COVER STORY</div>
+				<h1 class="font-serif">두근두근 ‘새로운 시작이야’</h1>
+				<p class="text-xl t-500">
 					2023년 새해가 밝았습니다.</br>
 					다사다난했던 지난날을 뒤로하고 새로운 한 해에는 부디 행복한 일들만 가득하길 바라는 마음을 담아봅니다.</br>
 					올해는 또 어떤 변화들이 우리를 기다리고 있을까요. 두근두근 희망이 담긴 ‘새로운 시작’을 이야기합니다.
 				</p>
 		</div>
 		<div class="cover-story cover-story--mobile font-white t-center">
-			<div class="font-size-base t-500">COVER STORY</div>
-			<h1 class="serif">두근두근 ‘새로운 시작이야’</h1>
-			<p class="font-size-base t-500">
+			<div class="text-xl t-500">COVER STORY</div>
+			<h1 class="font-serif">두근두근 ‘새로운 시작이야’</h1>
+			<p class="text-xl t-500">
 				2023년 새해가 밝았습니다.</br>
 				다사다난했던 지난날을 뒤로하고</br>
 				새로운 한 해에는 부디 행복한 일들만</br>
@@ -60,27 +60,18 @@ $args3 = array(
 		<div class="container">
 			<ul>
 				<li>
-					<a class="btn" href="<?php echo get_theme_file_uri('/pdf/kead-' . $thisMonth . '.pdf'); ?>" target="_blank">
+					<a class="btn" href="<?php echo site_url('pdf/kead-' . $thisMonth . '.pdf'); ?>" target="_blank">
 						<span>E-BOOK 보기</span> 
-						<svg viewBox="0 0 12 19" aria-hidden="true">
-							<use xlink:href="#icon-arrow"></use>
-						</svg>
 					</a>
 				</li>
 				<li>
 					<a class="btn" href="<?php echo site_url('/subscribe'); ?>">
 						<span>구독 신청하기</span> 
-						<svg viewBox="0 0 12 19" aria-hidden="true">
-							<use xlink:href="#icon-arrow"></use>
-						</svg>
 					</a>
 				</li>
 				<li>
 					<a class="btn" href="<?php echo site_url('/previous'); ?>">
 						<span>지난호 보기</span> 
-						<svg viewBox="0 0 12 19" aria-hidden="true">
-							<use xlink:href="#icon-arrow"></use>
-						</svg>
 					</a>
 				</li>
 			</ul>
@@ -92,8 +83,8 @@ $args3 = array(
 		<div class="container">
 			<div class="article part1 p-top-large">
 				<div class="article__title">
-					<div class="part-logo part-logo--1"></div>
-					<h1 class="font-size-xl">공감, 만나다</h1>
+					<div class="part-logo part-logo--1" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part1.svg'); ?>);"></div>
+					<h1 class="text-5xl">공감, 두드리다</h1>
 				</div>
 				<div class="article__contents p-top">
 					<?php 
@@ -107,16 +98,24 @@ $args3 = array(
 					
 					<a class="post" href="<?php the_permalink(); ?>">
 						<article>
-							<div class="post__category"><span class="font-size-base t-bold font-white"><?php echo  $subCategory ?></span></div>
+							<div class="post__category"><span class="text-xl font-bold font-white"><?php echo  $subCategory ?></span></div>
 							<div class="post__thumbnail">
-								<img
-									srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
-									src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
-									alt="<?php echo $alt_text ;?>"
-		 						/>
+								<?php if ($subCategory === '공감 테마'): ?>
+									<picture>
+										<source media="(max-width: 960px)" srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x" />
+										<source media="(min-width: 960px)" srcset="<?php the_post_thumbnail_url('kead-thumbnail-wide') ?>, <?php the_post_thumbnail_url('kead-thumbnail-wide-2x') ?> 2x" />
+										<img src="<?php the_post_thumbnail_url('kead-thumbnail') ?>" alt="<?php echo $alt_text ;?>" />
+									</picture>
+								<?php else: ?>
+									<img
+										srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
+										src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
+										alt="<?php echo $alt_text ;?>"
+									/>
+								<?php endif; ?>
 							</div>
 							<div class="post__title">
-								<h2 class="font-size-md"><?php the_title(); ?></h2>
+								<h2 class="text-2xl"><?php the_title(); ?></h2>
 							</div>
 						</article>
 					</a>
@@ -128,8 +127,8 @@ $args3 = array(
 
 			<div class="article part2 p-top-large">
 				<div class="article__title">
-					<div class="part-logo part-logo--2"></div>
-					<h1 class="font-size-xl">공감, 두드리다</h1>
+					<div class="part-logo part-logo--2" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part2.svg'); ?>);"></div>
+					<h1 class="text-5xl">공감, 만나다</h1>
 				</div>
 				<div class="article__contents p-top">
 					<?php 
@@ -143,30 +142,16 @@ $args3 = array(
 					
 					<a class="post" href="<?php the_permalink(); ?>">
 						<article>
-							<div class="post__category"><span class="font-size-base t-bold font-white"><?php echo  $subCategory ?></span></div>
-							<div class="post__thumbnail">
-								<?php if ($subCategory === '이달의 우수사원'): ?>
-									<picture>
-										<source media="(max-width: 960px)" srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x" />
-										<source media="(min-width: 960px)" srcset="<?php the_post_thumbnail_url('kead-thumbnail-long') ?>, <?php the_post_thumbnail_url('kead-thumbnail-long-2x') ?> 2x" />
-										<img src="<?php the_post_thumbnail_url('kead-thumbnail') ?>" alt="<?php echo $alt_text ;?>" />
-									</picture>
-								<?php elseif ($subCategory === '이슈 리포트'): ?>
-									<picture>
-										<source media="(max-width: 960px)" srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x" />
-										<source media="(min-width: 960px)" srcset="<?php the_post_thumbnail_url('kead-thumbnail-wide') ?>, <?php the_post_thumbnail_url('kead-thumbnail-wide-2x') ?> 2x" />
-										<img src="<?php the_post_thumbnail_url('kead-thumbnail') ?>" alt="<?php echo $alt_text ;?>" />
-									</picture>
-								<?php else: ?>
-									<img
-										srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
-										src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
-										alt="<?php echo $alt_text ;?>"
-		 							/>
-								<?php endif; ?>
+							<div class="post__category"><span class="text-xl font-bold font-white"><?php echo  $subCategory ?></span></div>
+							<div class="post__thumbnail">				
+								<img
+									srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
+									src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
+									alt="<?php echo $alt_text ;?>"
+								/>
 							</div>
 							<div class="post__title">
-								<h2 class="font-size-md"><?php the_title(); ?></h2>
+								<h2 class="text-2xl"><?php the_title(); ?></h2>
 							</div>
 						</article>
 					</a>
@@ -178,8 +163,8 @@ $args3 = array(
 			
 			<div class="article part3 p-top-large">
 				<div class="article__title">
-					<div class="part-logo part-logo--3"></div>
-					<h1 class="font-size-xl">공감, 번지다</h1>
+					<div class="part-logo part-logo--3" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part3.svg'); ?>);"></div>
+					<h1 class="text-5xl">공감, 번지다</h1>
 				</div>
 				<div class="article__contents p-top">
 					<?php 
@@ -193,17 +178,28 @@ $args3 = array(
 					
 					<a class="post" href="<?php the_permalink(); ?>">
 						<article>
-							<div class="post__category"><span class="font-size-base t-bold font-white"><?php echo  $subCategory ?></span></div>
+							<div class="post__category"><span class="text-xl font-bold font-white"><?php echo  $subCategory ?></span></div>
+							<?php if ($subCategory === 'KEAD 뉴스' || $subCategory === 'KEAD SNS'): ?>
 							<div class="post__thumbnail">
 								<img
-									srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
-									src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
+									srcset="<?php the_post_thumbnail_url('kead-thumbnail-mini') ?>, <?php the_post_thumbnail_url('kead-thumbnail-mini-2x') ?> 2x"
+									src="<?php the_post_thumbnail_url('kead-thumbnail-mini') ?>"
 									alt="<?php echo $alt_text ;?>"
-		 						/>
-							</div>
-							<div class="post__title">
-								<h2 class="font-size-md"><?php the_title(); ?></h2>
-							</div>
+								/>
+							</div>				
+							<?php else: ?>
+
+								<div class="post__thumbnail">
+									<img
+										srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
+										src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
+										alt="<?php echo $alt_text ;?>"
+									/>
+								</div>
+								<div class="post__title">
+									<h2 class="text-2xl"><?php the_title(); ?></h2>
+								</div>
+							<?php endif ?>
 						</article>
 					</a>
 					<?php }
@@ -214,8 +210,8 @@ $args3 = array(
 			
 			<div class="article part4 p-top-large">
 				<div class="article__title">
-					<div class="part-logo part-logo--4"></div>
-					<h1 class="font-size-xl">EVENT</h1>
+					<div class="part-logo part-logo--4" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part4.svg'); ?>);"></div>
+					<h1 class="text-5xl">EVENT</h1>
 				</div>
 				<div class="article__contents p-top">
 					

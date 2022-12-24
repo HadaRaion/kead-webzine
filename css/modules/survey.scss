@@ -1,0 +1,242 @@
+.survey {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+
+		@include atLarge {
+			padding-left: var(--layout-margin);
+			padding-right: var(--layout-margin);
+		}
+	}
+
+	div.wpforms-container-full .wpforms-form .wpforms-required-label {
+		color: $red;
+		font-weight: 400;
+	}
+
+	.btn {
+		margin: 0 auto;
+	}
+
+	.btn--sm {
+		max-width: 12rem;
+	}
+
+	.survey-form {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		align-items: center;
+
+		&__wrapper {
+			border-left: 2px solid #000;
+			border-right: 2px solid #000;
+			border-top: 2px solid #000;
+
+			background-color: #fff;
+			width: 1036px;
+			padding: 2rem;
+			background: #fff;
+			padding-bottom: 120px;
+
+			@include atSmall {
+				padding: 1rem;
+			}
+
+			@include atLarge {
+				border-left: 2px solid #000;
+				border-right: 2px solid #000;
+				border-top: 2px solid #000;
+				width: 86%;
+				padding-bottom: 10vw;
+			}
+
+			@include atMedium {
+				border-left: 1px solid #000;
+				border-right: 1px solid #000;
+				border-top: 1px solid #000;
+			}
+
+			@include atSmall {
+				padding-bottom: 60px;
+			}
+		}
+
+		img {
+			width: 100%;
+			margin-top: -370px;
+			pointer-events: none;
+
+			@include atLarge {
+				margin-top: -320px;
+			}
+
+			@include atMedium {
+				margin-top: -240px;
+			}
+
+			@include atSmall {
+				margin-top: -120px;
+			}
+		}
+
+		.kead-form {
+			padding-left: 6rem;
+			padding-right: 6rem;
+
+			@include atMedium {
+				padding-left: 4rem;
+				padding-right: 4rem;
+			}
+
+			@include atSmall {
+				padding-left: 0rem;
+				padding-right: 0rem;
+			}
+
+			.wpforms-confirmation-container-full {
+				background: transparent;
+				border: none;
+				font-size: 1.25rem;
+				text-align: center;
+
+				@include atSmall {
+					font-size: 1rem;
+				}
+			}
+
+			label.wpforms-field-label {
+				font-size: 1.25rem;
+
+				@include atSmall {
+					font-size: 1rem;
+				}
+
+				span.wpforms-required-label {
+					margin-left: 8px;
+				}
+			}
+
+			.kead-input {
+				display: flex;
+				align-self: center;
+				padding: 1rem 0;
+
+				flex-direction: column;
+
+				@include atMedium {
+					// flex-direction: column;
+				}
+
+				label.wpforms-field-label {
+					width: 300px;
+					display: flex;
+					align-items: center;
+
+					width: 100%;
+					margin-bottom: 0.5rem;
+
+					@include atMedium {
+						// width: 100%;
+						// margin-bottom: 0.5rem;
+					}
+				}
+
+				input {
+					border: 1px solid #000;
+					background-color: #e5e4e1;
+					border-radius: 0;
+				}
+			}
+
+			.kead-textarea {
+				textarea {
+					border: 1px solid #000;
+					background-color: #e5e4e1;
+					border-radius: 0;
+					margin-top: 1rem;
+				}
+			}
+
+			.kead-terms {
+				display: flex;
+				flex-direction: column;
+				margin-top: 2rem;
+
+				ul {
+					order: 3;
+
+					li {
+						margin-top: 2rem !important;
+						text-align: center;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						input[type='checkbox'] {
+							border: 1px solid #000;
+							width: 1.25rem;
+							height: 1.25rem;
+							margin: 1px 10px 0 3px;
+						}
+
+						& > label {
+							font-size: 1.25rem;
+
+							@include atSmall {
+								font-size: 1rem;
+							}
+						}
+					}
+				}
+
+				.wpforms-disclaimer-description {
+					background-color: #e5e4e1;
+					border: 1px solid #000;
+					color: #000;
+					font-size: 0.875rem; /* 14px */
+					padding: 15px 15px 15px 15px;
+
+					@include atSmall {
+						font-size: 0.75rem; /* 12px */
+					}
+				}
+			}
+
+			button[type='submit'] {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 20rem;
+				height: 3.4rem;
+				border-radius: 999em;
+				background-color: var(--color-part1);
+				color: #fff;
+				font-size: 1.4rem;
+				font-weight: bold;
+				margin: 2rem auto;
+
+				&:hover {
+					background-color: var(--color-part1);
+				}
+
+				@include atLarge {
+					width: 16rem;
+					height: 3rem;
+				}
+
+				@include atMedium {
+					width: 13rem;
+					height: 2.8rem;
+					font-size: 1.2rem;
+				}
+
+				@include atSmall {
+					width: 14rem;
+					height: 2.4rem;
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.previous {
+	ul {
+		display: flex;
+		gap: 5rem;
+
+		@include atMedium {
+			flex-direction: column;
+			gap: 3rem;
+			align-items: center;
+		}
+		li {
+			flex: 1;
+
+			@include atMedium {
+				max-width: 60%;
+			}
+
+			a {
+				aspect-ratio: 3 / 4;
+			}
+
+			h2 {
+				margin-top: 1rem;
+			}
+		}
+	}
+}

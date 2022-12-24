@@ -1,3 +1,15 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ *  @package kead-theme
+ */
+
+?>
 <footer footer class="site-footer">
   <div class="container">
     <button class="scroll-to-top" style="background-image: url(<?php echo get_theme_file_uri('/images/icons/icon-arrow-up.svg'); ?>);">
@@ -36,13 +48,13 @@
     </div>
     
     <address class="site-footer__address">
-      <p class="font-size-sm">3619 경기도 성남시 분당구 구미로 173번길 59 (구미동)</p>
-      <p class="font-size-sm">대표 <a href="tel:+8215881519">1588-1519</a></p>
-      <p class="font-size-sm">TEL <a href="tel:+82317287257">031-728-7257</a></p>
-      <p class="font-size-sm">FAX 050-3470-0022</p>
+      <p class="text-base">3619 경기도 성남시 분당구 구미로 173번길 59 (구미동)</p>
+      <p class="text-base">대표 <a href="tel:+8215881519">1588-1519</a></p>
+      <p class="text-base">TEL <a href="tel:+82317287257">031-728-7257</a></p>
+      <p class="text-base">FAX 050-3470-0022</p>
     </address>
 
-    <p class="font-size-sm">COPYRIGHT &copy; 2023 KEAD RIGHT RESERVED.</p>
+    <p class="text-base">COPYRIGHT &copy; 2023 KEAD RIGHT RESERVED.</p>
   </div>
 </footer>
 

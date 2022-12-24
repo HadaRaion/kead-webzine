@@ -13,39 +13,19 @@ function kead_files() {
 
 add_action('wp_enqueue_scripts', 'kead_files');
 
-
-add_action('wp_enqueue_scripts', 'kead_files');
-
 function kead_features() {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_image_size('kead-thumbnail', 380, 285, true);
   add_image_size('kead-thumbnail-2x', 760, 570, true);
-  add_image_size('kead-thumbnail-long', 380, 680, true);
-  add_image_size('kead-thumbnail-long-2x ', 760, 1360, true);
   add_image_size('kead-thumbnail-wide', 380, 285, true);
   add_image_size('kead-thumbnail-wide-2x ', 760, 570, true);
+  add_image_size('kead-thumbnail-mini', 380, 190, true);
+  add_image_size('kead-thumbnail-mini-2x ', 760, 380, true);
 }
 
 add_action('after_setup_theme', 'kead_features');
 
-
-
-function pageBanner($title = NULL) {
-  
-  if (!$title) {
-    $title = get_the_title();
-  }
-  ?>
-
-  <div class="page-banner">
-    <div class="page-banner__logo">
-      <img src="<?php echo get_theme_file_uri('/images/logos/kead-webzine-logo.svg'); ?>" alt="장애인과 일터 로고">
-    </div>
-    <h1 class="page-banner__title"><?php echo $title ?></h1>
-  </div>
-
-<?php }
 
 
 //Redirect subscriber accounts out of admin and onto homepage
@@ -70,7 +50,34 @@ function noSubsAdminBar() {
   }
 }
 
-add_filter('ai1wm_exclude_content_from_export', function($exclude_filters) {
-  $exclude_filters[] = 'themes/kead-theme/node_modules';
+add_filter( 'ai1wm_exclude_themes_from_export', function ( $exclude_filters ) {
+  $exclude_filters[] = 'kead-theme/node_modules';
   return $exclude_filters;
-});
+} );
+
+function kead_setup_theme_supported_features() {
+  add_theme_support( 'editor-color-palette', array(
+    array(
+      'name'  => esc_attr__( 'Color Part1', 'themeLangDomain' ),
+      'slug'  => 'color-part1',
+      'color' => '#a1634d',
+    ),
+    array(
+      'name'  => esc_attr__( 'Color Part2', 'themeLangDomain' ),
+      'slug'  => 'color-part2',
+      'color' => '#357997',
+    ),
+    array(
+      'name'  => esc_attr__( 'Color Part4', 'themeLangDomain' ),
+      'slug'  => 'color-part3',
+      'color' => '#6c5992',
+    ),
+    array(
+      'name'  => esc_attr__( 'Color Part4', 'themeLangDomain' ),
+      'slug'  => 'color-part4',
+      'color' => '#e48089',
+    ),
+  ) );
+}
+
+add_action( 'after_setup_theme', 'kead_setup_theme_supported_features' );

@@ -7,60 +7,6 @@
 	margin-right: auto;
 }
 
-.serif {
-	font-family: 'Noto Serif KR', serif;
-}
-
-.t-left {
-	text-align: left;
-}
-.t-right {
-	text-align: right;
-}
-.t-center {
-	text-align: center;
-}
-
-.t-500 {
-	font-weight: 500;
-}
-
-.t-bold {
-	font-weight: bold;
-}
-
-.font-size-h1 {
-	font-size: var(--step-5);
-}
-
-.font-size-h2 {
-	font-size: var(--step-4);
-}
-
-.font-size-xl {
-	font-size: var(--step-3);
-}
-
-.font-size-lg {
-	font-size: var(--step-2);
-}
-
-.font-size-md {
-	font-size: var(--step-1);
-}
-
-.font-size-base {
-	font-size: var(--step-0);
-}
-
-.font-size-sm {
-	font-size: var(--step--1);
-}
-
-.font-white {
-	color: #fff;
-}
-
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(100%);
@@ -83,6 +29,14 @@
 	}
 }
 
+.p-top-xs {
+	padding-top: 1rem;
+}
+
+.p-top-small {
+	padding-top: 2rem;
+}
+
 .p-top {
 	padding-top: 4rem;
 }
@@ -90,44 +44,70 @@
 .p-top-large {
 	padding-top: 8rem;
 }
+
+.p-bottom-xs {
+	padding-bottom: 1rem;
+}
+
+.p-bottom-small {
+	padding-bottom: 2rem;
+}
+
+.p-bottom {
+	padding-bottom: 4rem;
+}
+
 .p-bottom-large {
 	padding-bottom: 8rem;
 }
 
-@include atSmall {
-	.p-top-large {
-		padding-top: 3.5rem;
+@include atMedium {
+	.p-top {
+		padding-top: 3rem;
 	}
+
+	.p-top-large {
+		padding-top: 5rem;
+	}
+
+	.p-bottom {
+		padding-bottom: 3rem;
+	}
+
 	.p-bottom-large {
-		padding-bottom: 3.5rem;
+		padding-bottom: 5rem;
 	}
 }
 
-// .container:before,
-// .container:after,
-// .group:before,
-// .group:after {
-// 	content: ' ';
-// 	display: table;
-// }
+@include atSmall {
+	.p-top-xs {
+		padding-top: 0.5rem;
+	}
 
-// .container:after,
-// .group:after {
-// 	clear: both;
-// }
+	.p-top-small {
+		padding-top: 1rem;
+	}
+	.p-top {
+		padding-top: 2rem;
+	}
 
-// .hide {
-// 	display: none;
-// }
+	.p-top-large {
+		padding-top: 3rem;
+	}
 
-// .container--narrow {
-// 	max-width: 960px;
-// }
+	.p-top-xs {
+		padding-bottom: 0.5rem;
+	}
 
-// .t-small {
-// 	font-size: 0.85rem;
-// }
+	.p-bottom-small {
+		padding-bottom: 1rem;
+	}
 
-// .push-right {
-// 	margin-right: 20px;
-// }
+	.p-bottom {
+		padding-bottom: 2rem;
+	}
+
+	.p-bottom-large {
+		padding-bottom: 3rem;
+	}
+}

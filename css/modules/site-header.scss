@@ -54,19 +54,18 @@
 		}
 
 		.link-home {
-			background-color: #fff;
 			width: 48px;
 			height: 48px;
 			border-radius: 50%;
+			background-image: url('../images/icons/icon-home-full.svg');
+			background-size: cover;
 
 			@include atLarge {
-				background-image: url('../images/logos/kead-logo-white.svg');
-				background-size: cover;
-				background-color: transparent;
-				aspect-ratio: 228 / 40;
 				width: 220px;
 				height: auto;
+				aspect-ratio: 228 / 40;
 				border-radius: 0%;
+				background-image: url('../images/logos/kead-logo-white.svg');
 				margin-bottom: 4px;
 			}
 
