@@ -15,9 +15,9 @@
 
 	.container {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		padding-top: 50px;
+		padding-top: 3rem;
 		position: relative;
 
 		@include atLarge {
@@ -29,60 +29,43 @@
 		}
 	}
 
-	&__links {
-		transform: rotate(90deg);
-		transform-origin: top left;
-		position: absolute;
-		top: 15rem;
-		left: 73%;
-		display: flex;
+	.link-kead {
+		margin: 3rem 0 5rem;
+		width: 40px;
+		@include atLarge {
+			display: none;
+		}
+	}
+
+	.link-home {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background-image: url('../images/icons/icon-home-full.svg');
+		background-size: cover;
 
 		@include atLarge {
-			transform: rotate(0deg);
-			position: relative;
-			top: auto;
-			left: auto;
+			width: 220px;
+			height: auto;
+			aspect-ratio: 228 / 40;
+			border-radius: 0%;
+			background-image: url('../images/logos/kead-logo-white.svg');
+			margin-bottom: 4px;
 		}
 
-		.link-kead {
-			width: 15rem;
-			margin-right: 3rem;
-
-			@include atLarge {
-				display: none;
-			}
+		@include atMedium {
+			width: 180px;
 		}
 
-		.link-home {
-			width: 48px;
-			height: 48px;
-			border-radius: 50%;
-			background-image: url('../images/icons/icon-home-full.svg');
-			background-size: cover;
+		@include atSmall {
+			width: 148px;
+			margin-bottom: 6px;
+		}
 
-			@include atLarge {
-				width: 220px;
-				height: auto;
-				aspect-ratio: 228 / 40;
-				border-radius: 0%;
-				background-image: url('../images/logos/kead-logo-white.svg');
-				margin-bottom: 4px;
-			}
-
-			@include atMedium {
-				width: 180px;
-			}
-
-			@include atSmall {
-				width: 148px;
-				margin-bottom: 6px;
-			}
-
-			& > a {
-				display: block;
-				width: 100%;
-				height: 100%;
-			}
+		& > a {
+			display: block;
+			width: 100%;
+			height: 100%;
 		}
 	}
 }

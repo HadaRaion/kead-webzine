@@ -69,28 +69,26 @@
         <span></span>
       </button>
 
-      <div class="site-header__links">
-        <div class="link-kead">
-          <a href="https://www.kead.or.kr/" target="_black" title="한국장애인고용공단 홈페이지 새창열기">
-            <img src="<?php echo get_theme_file_uri('/images/logos/kead-logo-white.svg'); ?>" alt="한국장애인고용공단 로고">
-          </a>
-        </div>
+      <div class="link-kead">
+        <a href="https://www.kead.or.kr/" target="_black" title="한국장애인고용공단 홈페이지 새창열기">
+          <img src="<?php echo get_theme_file_uri('/images/logos/kead-logo-vertical.svg'); ?>" alt="한국장애인고용공단 로고">
+        </a>
+      </div>
 
-        <!-- 매달교체 -->
-        <div class="link-home">
-          <?php if( $thisMonth  === 'january' ): ?>
-          <a href="<?php echo site_url() ?>">
-            <span class="link-text visually-hidden">장애인과 일터 홈</span>
-          </a>
+      <!-- 매달교체 -->
+      <div class="link-home">
+        <?php if( $thisMonth  === 'january' ): ?>
+        <a href="<?php echo site_url() ?>">
+          <span class="link-text visually-hidden">장애인과 일터 홈</span>
+        </a>
 
-          <?php else: ?>
+        <?php else: ?>
 
-          <a href="<?php echo site_url($thisMonth) ?>" title="장애인과 일터 홈으로 이동">
-            <span class="link-text visually-hidden">장애인과 일터 <?php echo $args['month']; ?> 홈</span>
-          </a>
+        <a href="<?php echo site_url($thisMonth) ?>" title="장애인과 일터 홈으로 이동">
+          <span class="link-text visually-hidden">장애인과 일터 <?php echo $args['month']; ?> 홈</span>
+        </a>
 
-          <?php endif ?>
-        </div>
+        <?php endif ?>
       </div>
     </div>
   </header>
