@@ -5,62 +5,100 @@
 	@include atSmall {
 		font-size: 1rem; /* 16px */
 	}
-}
 
-.kead-h1 {
-	font-size: 3rem; /* 48px */
-	line-height: 4.4rem;
+	h1 {
+		font-size: 3rem; /* 48px */
+		line-height: 4.4rem;
 
-	@include atSmall {
-		font-size: 2.25rem; /* 36px */
-		line-height: 2.6rem;
+		@include atSmall {
+			font-size: 2.25rem; /* 36px */
+			line-height: 2.6rem;
+		}
 	}
-}
 
-.kead-h2 {
-	font-size: 2.5rem; /* 40px */
-	line-height: 1;
-	font-weight: 400;
-	margin-top: 1rem;
+	h2 {
+		font-size: 2.5rem; /* 40px */
+		line-height: 1;
+		font-weight: 400;
+		margin-top: 1rem;
 
-	@include atSmall {
-		font-size: 2rem; /* 32px */
+		@include atSmall {
+			font-size: 2rem; /* 32px */
+		}
 	}
-}
 
-.kead-h4 {
-	font-size: 1.75rem; /* 28px */
+	h4 {
+		font-size: 1.75rem; /* 28px */
 
-	@include atSmall {
+		@include atSmall {
+			font-size: 1.5rem; /* 24px */
+		}
+	}
+
+	h5 {
 		font-size: 1.5rem; /* 24px */
+
+		@include atSmall {
+			font-size: 1.125rem; /* 18px */
+		}
+	}
+
+	p.kead-caption {
+		font-size: 0.875rem; /* 14px */
+
+		@include atSmall {
+			font-size: 0.75rem; /* 12px */
+		}
+	}
+
+	figure {
+		margin: 0;
+		height: 100%;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	ul,
+	li {
+		list-style: disc;
 	}
 }
 
-.kead-h5 {
-	font-size: 1.5rem; /* 24px */
+// .kead-h1 {
+// 	font-size: 3rem; /* 48px */
+// 	line-height: 4.4rem;
 
-	@include atSmall {
-		font-size: 1.125rem; /* 18px */
-	}
-}
+// 	@include atSmall {
+// 		font-size: 2.25rem; /* 36px */
+// 		line-height: 2.6rem;
+// 	}
+// }
 
-p.kead-caption {
-	margin-top: -2.2rem;
-	font-size: 0.875rem; /* 14px */
+// .kead-h2 {
+// 	font-size: 2.5rem; /* 40px */
+// 	line-height: 1;
+// 	font-weight: 400;
+// 	margin-top: 1rem;
 
-	@include atSmall {
-		font-size: 0.75rem; /* 12px */
-	}
-}
+// 	@include atSmall {
+// 		font-size: 2rem; /* 32px */
+// 	}
+// }
 
-.kead-intro {
-	padding: 4rem 0;
+// .kead-h4 {
+// 	font-size: 1.75rem; /* 28px */
 
-	@include atSmall {
-		padding: 2rem 0;
-	}
-}
+// 	@include atSmall {
+// 		font-size: 1.5rem; /* 24px */
+// 	}
+// }
 
-.kead-space {
-	padding-top: 2rem;
-}
+// .kead-h5 {
+// 	font-size: 1.5rem; /* 24px */
+
+// 	@include atSmall {
+// 		font-size: 1.125rem; /* 18px */
+// 	}
+// }

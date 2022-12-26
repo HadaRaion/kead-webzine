@@ -43,9 +43,6 @@
 					margin-right: 0.6rem;
 				}
 			}
-
-			&__cat {
-			}
 		}
 
 		&__nav {
@@ -136,10 +133,6 @@
 				}
 			}
 		}
-	}
-
-	&.part1 .post__contents > .container h1 {
-		color: var(--color-part1);
 	}
 
 	&.part1 .post__contents > .container::before {

@@ -33,7 +33,7 @@ $args3 = array(
 			</div>
   	</div>
 		<div class="cover-story cover-story--desktop font-white t-center">
-				<div class="text-xl t-500">COVER STORY!</div>
+				<div class="text-xl t-500">COVER STORY</div>
 				<h1 class="">두근두근 ‘새로운 시작이야’</h1>
 				<p class="text-xl t-500">
 					2023년 새해가 밝았습니다.</br>

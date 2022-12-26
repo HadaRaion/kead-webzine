@@ -1,28 +1,25 @@
+.wp-block-lazyblock-kead-title {
+	margin-bottom: 4rem;
+
+	@include atSmall {
+		margin-bottom: 2rem;
+	}
+}
+
+.kead-space {
+	padding-bottom: 2rem;
+
+	@include atSmall {
+		padding-bottom: 1rem;
+	}
+}
+
 .bg-white {
 	background-color: white;
 	padding: 4rem;
 
 	@include atMedium {
 		padding: 2rem;
-	}
-}
-
-.no-m-figure {
-	figure {
-		margin: 0;
-		height: 100%;
-
-		img {
-			height: 100%;
-		}
-	}
-}
-
-.kead-space {
-	margin-top: 2rem;
-
-	@include atSmall {
-		margin-top: 1rem;
 	}
 }
 
