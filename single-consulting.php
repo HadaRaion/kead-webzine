@@ -12,7 +12,7 @@
 
 ?>
 
-  <main id="contents" class="post <?php echo $parentCategorySlug; ?>">
+  <main id="contents" class="<?php echo $parentCategorySlug; ?>">
     <section class="post__top">
       <div class="post__top__wrapper">
         <div class="post__top__title text-2xl ">
@@ -64,28 +64,28 @@
             ?>
             <?php if ( $question1  ) : ?>
             <li>
-              <p class="consulting__question text-xl font-bold"><?php echo $question1 ?></p>
+              <p class="consulting__question text-2xl font-bold"><?php echo $question1 ?></p>
               <p class="consulting__answer text-xl"><?php echo $answer1 ?></p>
             </li>
             <?php endif; ?>
 
             <?php if ( $question2  ) : ?>
             <li>
-              <p class="consulting__question text-xl font-bold">bbb<?php echo $question2 ?></p>
+              <p class="consulting__question text-2xl font-bold">bbb<?php echo $question2 ?></p>
               <p class="consulting__answer text-xl"><?php echo $answer2 ?></p>
             </li>
             <?php endif; ?>
 
             <?php if ( $question3  ) : ?>
             <li>
-              <p class="consulting__question text-xl font-bold"><?php echo $question3 ?>aa</p>
+              <p class="consulting__question text-2xl font-bold"><?php echo $question3 ?>aa</p>
               <p class="consulting__answer text-xl"><?php echo $answer3 ?></p>
             </li>
             <?php endif; ?>
 
             <?php if ( $question4  ) : ?>
             <li>
-              <p class="consulting__question text-xl font-bold"><?php echo $question4 ?></p>
+              <p class="consulting__question text-2xl font-bold"><?php echo $question4 ?></p>
               <p class="consulting__answer text-xl"><?php echo $answer4 ?></p>
             </li>
             <?php endif; ?>
