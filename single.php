@@ -40,10 +40,14 @@
 
     <section class="single-post__contents p-top-large p-bottom-large ">
       <div class="container">
-        <?php 
-          if ( $category !== '공감 人스타'):
-          the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); 
-          endif; ?>
+        <?php if ( $category !== '공감 人스타'): ?>
+          <figure>
+            <?php the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); ?>
+              <?php if (get_the_post_thumbnail_caption()): ?>
+              <figcaption class="text-sm p-top-xs"><?php the_post_thumbnail_caption(); ?></figcaption>
+              <?php endif; ?>
+          </figure>
+        <?php endif; ?>
         <?php 
           $audioSrc = get_field('kead-audio');
           if ( $audioSrc  ) :
