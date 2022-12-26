@@ -115,7 +115,10 @@
 
 			& > a {
 				grid-row: span 2;
+				border-radius: 2rem;
+				overflow: hidden;
 			}
+
 			.post__thumbnail {
 				position: relative;
 
@@ -177,7 +180,49 @@
 				grid-row: span 1;
 
 				.post__thumbnail {
-					aspect-ratio: 25 / 12;
+					aspect-ratio: 370 / 182;
+				}
+			}
+		}
+
+		&__event {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+
+			@include atMedium {
+				flex-direction: column;
+			}
+
+			&__text {
+				flex: 1 1 60%;
+				display: flex;
+				flex-direction: column;
+
+				h2 {
+					color: #d22f4f;
+					font-weight: 900;
+				}
+
+				.btn {
+					background-color: var(--color-part2);
+				}
+
+				&__period {
+					margin-top: auto;
+
+					.t-underline {
+						color: #dd5257;
+					}
+				}
+			}
+
+			&__image {
+				flex: 1 1 40%;
+
+				& > img {
+					height: 100%;
+					object-fit: cover;
 				}
 			}
 		}

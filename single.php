@@ -20,7 +20,7 @@
 
 
 
-  <main id="contents" class="post <?php echo $parentCategorySlug; if ($category === '공감 테마'): echo ' serif-post'; else: echo ''; endif; ?>">
+  <main id="contents" class="post <?php echo $parentCategorySlug; ?>">
     <section class="post__top">
       <div class="post__top__wrapper">
         <div class="post__top__title text-2xl ">
@@ -40,8 +40,10 @@
 
     <section class="post__contents p-top-large p-bottom-large ">
       <div class="container">
-        <?php the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); ?>
-
+        <?php 
+          if ( $category !== '공감 人스타'):
+          the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); 
+          endif; ?>
         <?php 
           $audioSrc = get_field('kead-audio');
           if ( $audioSrc  ) :
@@ -55,7 +57,7 @@
         </div>
         <?php endif; ?>
 
-        <div class="text-xl p-top"><?php the_content(); ?></div>
+        <div class="p-top"><?php the_content(); ?></div>
       </div>
     </section>
     

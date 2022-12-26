@@ -177,7 +177,7 @@
           <li>
             <div class="part-logo part-logo--sm part-logo--3" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part3.svg'); ?>);"></div>
             <div class="menu">
-              <h1 class="text-3xl">공감, 번지다</h1>
+              <h1 class="text-3xl">공감, 함께하다</h1>
 
               <ul class="menu-list">
                 <?php 

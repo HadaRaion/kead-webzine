@@ -11,6 +11,7 @@
 
 ?>
 <footer footer class="site-footer">
+  <hr>
   <div class="container">
     <button class="scroll-to-top" style="background-image: url(<?php echo get_theme_file_uri('/images/icons/icon-arrow-up.svg'); ?>);">
       <span class="visually-hidden">페이지 상단으로 이동</span>

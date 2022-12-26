@@ -38,6 +38,11 @@
 	text-align: center;
 }
 
+.t-underline {
+	text-decoration: solid underline currentColor 1px;
+	text-underline-offset: 2px;
+}
+
 .text-xs {
 	font-size: 0.75rem; /* 12px */
 
@@ -68,10 +73,6 @@
 	@include atSmall {
 		font-size: 0.938rem; /* 15px */
 	}
-}
-
-.post .text-xl {
-	line-height: 1.8;
 }
 
 .text-xl {

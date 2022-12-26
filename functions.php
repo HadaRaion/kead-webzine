@@ -20,13 +20,11 @@ function kead_features() {
   add_image_size('kead-thumbnail-2x', 760, 570, true);
   add_image_size('kead-thumbnail-wide', 380, 285, true);
   add_image_size('kead-thumbnail-wide-2x ', 760, 570, true);
-  add_image_size('kead-thumbnail-mini', 380, 190, true);
-  add_image_size('kead-thumbnail-mini-2x ', 760, 380, true);
+  add_image_size('kead-thumbnail-mini', 380, 187, true);
+  add_image_size('kead-thumbnail-mini-2x ', 760, 374, true);
 }
 
 add_action('after_setup_theme', 'kead_features');
-
-
 
 //Redirect subscriber accounts out of admin and onto homepage
 add_action('admin_init', 'redirectSubsToFrontend');
@@ -50,11 +48,14 @@ function noSubsAdminBar() {
   }
 }
 
+// Exclude node module for migration plugin 
 add_filter( 'ai1wm_exclude_themes_from_export', function ( $exclude_filters ) {
   $exclude_filters[] = 'kead-theme/node_modules';
   return $exclude_filters;
 } );
 
+
+// KEAD color pallette
 function kead_setup_theme_supported_features() {
   add_theme_support( 'editor-color-palette', array(
     array(

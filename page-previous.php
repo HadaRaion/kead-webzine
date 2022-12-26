@@ -8,7 +8,7 @@
       <h1 class="page-banner__title text-7xl p-top-small">지난호 보기</h1>
     </div>
     
-    <ul class="p-top-small p-bottom-large">
+    <ul class="p-top-small">
       <li class="">
         <a href="<?php echo site_url('pdf/202212.pdf'); ?>" target="_blank" title="지난호 새창보기">
           <img src="<?php echo get_theme_file_uri('/images/covers/202212.jpg'); ?>" alt="2022년 12월호 표지">
@@ -36,6 +36,12 @@
         </h2>
       </li>
     </ul>
+
+    <div class="p-top  p-bottom-large">
+      <a class="btn" href="https://www.kead.or.kr/common/comm_board.jsp?main=99" title="새창에서 보기">
+       <span>2023년 이전호 보기</span>
+      </a>
+    </div>
   </div>
 </main>
 

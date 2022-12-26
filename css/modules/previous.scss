@@ -24,4 +24,13 @@
 			}
 		}
 	}
+
+	.btn {
+		max-width: 20rem;
+		margin: 0 auto;
+
+		@include atSmall {
+			max-width: 16rem;
+		}
+	}
 }

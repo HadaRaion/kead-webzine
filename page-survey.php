@@ -24,8 +24,9 @@
           ‘고민톡 상담툭’과 ‘#공감태그’ 코너 참여도 기다립니다. 
         </p>
         <p class="t-center text-base p-bottom-small">※이벤트에 응모하실 분은 내용 하단에 이름과 휴대폰 번호를 기재하셔야 기프티콘을 받으실 수 있습니다.</p>
-
-          <?php echo do_shortcode( '[wpforms id="100168"]' ); ?>
+          
+        
+        <?php the_content(); ?> 
       </div>
 
       <img src="<?php echo get_theme_file_uri('/images/survey-form.svg') ?>" alt="편지를 주고 받는 사람들 일러스트">

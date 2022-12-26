@@ -34,7 +34,7 @@ $args3 = array(
   	</div>
 		<div class="cover-story cover-story--desktop font-white t-center">
 				<div class="text-xl t-500">COVER STORY</div>
-				<h1 class="font-serif">두근두근 ‘새로운 시작이야’</h1>
+				<h1 class="">두근두근 ‘새로운 시작이야’</h1>
 				<p class="text-xl t-500">
 					2023년 새해가 밝았습니다.</br>
 					다사다난했던 지난날을 뒤로하고 새로운 한 해에는 부디 행복한 일들만 가득하길 바라는 마음을 담아봅니다.</br>
@@ -43,7 +43,7 @@ $args3 = array(
 		</div>
 		<div class="cover-story cover-story--mobile font-white t-center">
 			<div class="text-xl t-500">COVER STORY</div>
-			<h1 class="font-serif">두근두근 ‘새로운 시작이야’</h1>
+			<h1 class="">두근두근 ‘새로운 시작이야’</h1>
 			<p class="text-xl t-500">
 				2023년 새해가 밝았습니다.</br>
 				다사다난했던 지난날을 뒤로하고</br>
@@ -164,7 +164,7 @@ $args3 = array(
 			<div class="article part3 p-top-large">
 				<div class="article__title">
 					<div class="part-logo part-logo--3" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part3.svg'); ?>);"></div>
-					<h1 class="text-5xl">공감, 번지다</h1>
+					<h1 class="text-5xl">공감, 함께하다</h1>
 				</div>
 				<div class="article__contents p-top">
 					<?php 
@@ -213,8 +213,25 @@ $args3 = array(
 					<div class="part-logo part-logo--4" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part4.svg'); ?>);"></div>
 					<h1 class="text-5xl">EVENT</h1>
 				</div>
-				<div class="article__contents p-top">
-					
+				<div class="article__event p-top">
+					<div class="article__event__text">
+						<h2 class="text-7xl">웹진 보고 선물 받자</h2>
+						<p class="text-2xl font-bold p-top-small p-bottom-small">
+							2023년 새롭게 시작하는 [장애인과 일터]에서<br />
+							기분좋은선물받아가세요!
+						</p>
+						<a class="btn btn--sm" href="<?php echo site_url('/january/event'); ?>">이벤트 바로가기</a>
+						<div class="article__event__text__period  p-top">
+						<div class="t-underline text-xl font-bold">이벤트 기간</div>
+						<div class="text-xl p-bottom-xs">2023년 1월 2일(월) ~ 1월 20일(금)</div>
+						<div class="t-underline text-xl font-bold">이벤트 기간</div>
+						<div class="text-xl p-bottom-small">개별 발송 및 [장애인과 일터] 2월호 이벤트 페이지에 공지</div>
+						</div>
+
+					</div>
+					<div class="article__event__image">
+						<img src="<?php echo get_theme_file_uri('/images/event-thumb.svg'); ?>" alt="기프티콘 이미지">
+					</div>
 				</div>
 			</div>
 		</div>
