@@ -12,15 +12,15 @@
 
 ?>
 
-  <main id="contents" class="<?php echo $parentCategorySlug; ?>">
-    <section class="post__top">
-      <div class="post__top__wrapper">
-        <div class="post__top__title text-2xl ">
-          <div class="post__top__title__parent-cat font-bold"><?php echo $parentCategory ?></div>
-          <div class="post__top__title__cat"><?php echo $category ?></div>
+  <main id="contents" class="single-post <?php echo $parentCategorySlug; ?>">
+    <section class="single-post__top">
+      <div class="single-post__top__wrapper">
+        <div class="single-post__top__title text-2xl ">
+          <div class="single-post__top__title__parent-cat font-bold"><?php echo $parentCategory ?></div>
+          <div class="single-post__top__title__cat"><?php echo $category ?></div>
         </div>
 
-        <ul class="post__top__nav">
+        <ul class="single-post__top__nav">
           <li class="prev-link"><?php previous_post_link( '%link', '이전기사' ); ?></li>
           <li class="next-link"><?php next_post_link( '%link', '다음기사' ); ?></li>
         </ul>
@@ -30,12 +30,12 @@
 
     <?php while ( have_posts() ) : the_post();  ?>
 
-    <section class="post__contents p-top-large p-bottom-large ">
+    <section class="single-post__contents p-top-large p-bottom-large ">
       <div class="container">
         
         <?php the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); ?>
 
-        <div class="post-title p-top-large p-bottom-large">
+        <div class="single-post-title p-top-large p-bottom-large">
           <h1 class="text-7xl t-center color-part3">알쏭달쏭 직장생활</h1>
           <h1 class="text-7xl t-center p-top-small">“이런 고민 어떻게 할까요?”</h1>
           <h3 class="text-2xl p-top-large font-500">직장이란 모두에게 소중한 공간이면서도 온갖 고민의 발상지이기도 합니다. 나만 이런 문제를 겪는지 궁금하고 불안하 며 힘든 일이 있으신가요? [장애인과 일터]가 여러분의 사연을 듣고 함께 고민합니다.</h3>

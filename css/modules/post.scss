@@ -1,4 +1,4 @@
-.post {
+.single-post {
 	position: relative;
 
 	&__top {
@@ -135,23 +135,19 @@
 		}
 	}
 
-	&.part1 .post__contents > .container::before {
+	&.part1 .single-post__contents > .container::before {
 		background-color: var(--color-part1);
 	}
 
-	&.part2 .post__contents > .container::before {
+	&.part2 .single-post__contents > .container::before {
 		background-color: var(--color-part2);
 	}
 
-	&.part3 .post__contents > .container::before {
+	&.part3 .single-post__contents > .container::before {
 		background-color: var(--color-part3);
 	}
 
-	&.part4 .post__contents > .container::before {
+	&.part4 .single-post__contents > .container::before {
 		background-color: var(--color-part4);
-	}
-
-	&.serif-post .post__contents {
-		font-family: 'Noto Serif KR', serif;
 	}
 }

@@ -1,4 +1,4 @@
-.post {
+.single-post {
 	font-size: 1.25rem; /* 20px */
 	line-height: 1.8;
 
@@ -60,9 +60,11 @@
 		}
 	}
 
-	ul,
-	li {
-		list-style: disc;
+	&__contents {
+		ul,
+		li {
+			list-style: disc;
+		}
 	}
 }
 

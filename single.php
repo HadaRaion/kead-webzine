@@ -20,15 +20,15 @@
 
 
 
-  <main id="contents" class="post <?php echo $parentCategorySlug; ?>">
-    <section class="post__top">
-      <div class="post__top__wrapper">
-        <div class="post__top__title text-2xl ">
-          <div class="post__top__title__parent-cat font-bold"><?php echo $parentCategory ?></div>
-          <div class="post__top__title__cat"><?php echo $category ?></div>
+  <main id="contents" class="single-post <?php echo $parentCategorySlug; ?>">
+    <section class="single-post__top">
+      <div class="single-post__top__wrapper">
+        <div class="single-post__top__title text-2xl ">
+          <div class="single-post__top__title__parent-cat font-bold"><?php echo $parentCategory ?></div>
+          <div class="single-post__top__title__cat"><?php echo $category ?></div>
         </div>
 
-        <ul class="post__top__nav">
+        <ul class="single-post__top__nav">
           <li class="prev-link"><?php previous_post_link( '%link', '이전기사' ); ?></li>
           <li class="next-link"><?php next_post_link( '%link', '다음기사' ); ?></li>
         </ul>
@@ -38,7 +38,7 @@
 
     <?php while ( have_posts() ) : the_post();  ?>
 
-    <section class="post__contents p-top-large p-bottom-large ">
+    <section class="single-post__contents p-top-large p-bottom-large ">
       <div class="container">
         <?php 
           if ( $category !== '공감 人스타'):
