@@ -113,7 +113,6 @@ h6.has-background {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-
 		padding: 4rem 0;
 
 		@include atMedium {
@@ -135,6 +134,10 @@ h6.has-background {
 				width: 2rem;
 				margin: 1rem;
 			}
+		}
+
+		&__quote {
+			line-height: 1.4;
 		}
 	}
 }
