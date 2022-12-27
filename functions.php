@@ -48,37 +48,9 @@ function noSubsAdminBar() {
   }
 }
 
-// Exclude node module for migration plugin 
-add_filter( 'ai1wm_exclude_themes_from_export', function ( $exclude_filters ) {
-  $exclude_filters[] = 'kead-theme/node_modules';
-  return $exclude_filters;
-} );
+function tabor_setup() {
+add_theme_support( 'editor-styles' );
+add_editor_style( 'assets/css/style-editor.css' );
+}
 
-
-// KEAD color pallette
-// function kead_setup_theme_supported_features() {
-//   add_theme_support( 'editor-color-palette', array(
-//     array(
-//       'name'  => esc_attr__( 'Color Part1', 'themeLangDomain' ),
-//       'slug'  => 'color-part1',
-//       'color' => '#a1634d',
-//     ),
-//     array(
-//       'name'  => esc_attr__( 'Color Part2', 'themeLangDomain' ),
-//       'slug'  => 'color-part2',
-//       'color' => '#357997',
-//     ),
-//     array(
-//       'name'  => esc_attr__( 'Color Part4', 'themeLangDomain' ),
-//       'slug'  => 'color-part3',
-//       'color' => '#6c5992',
-//     ),
-//     array(
-//       'name'  => esc_attr__( 'Color Part4', 'themeLangDomain' ),
-//       'slug'  => 'color-part4',
-//       'color' => '#e48089',
-//     ),
-//   ) );
-// }
-
-// add_action( 'after_setup_theme', 'kead_setup_theme_supported_features' );
+add_action( 'after_setup_theme', 'tabor_setup' );
