@@ -54,6 +54,14 @@ h6.has-background {
 	}
 }
 
+.wp-block-lazyblock-kead-caption {
+	margin-top: 1rem;
+
+	@include atSmall {
+		margin-top: 0.5rem;
+	}
+}
+
 // KEAD SNS
 .kead-sns > div {
 	margin-bottom: 4rem;

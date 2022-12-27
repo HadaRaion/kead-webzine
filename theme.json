@@ -69,12 +69,12 @@
 				{
 					"size": "clamp(1.88rem, calc(1.07rem + 3.57vw), 3.75rem)",
 					"slug": "60",
-					"name": "6"
+					"name": "5"
 				},
 				{
 					"size": "clamp(2.50rem, calc(1.43rem + 4.76vw), 5.00rem)",
 					"slug": "80",
-					"name": "8"
+					"name": "6"
 				}
 			],
 			"units": ["%", "px", "em", "rem", "vh", "vw"]
