@@ -206,7 +206,7 @@
 			"h5": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)",
-					"fontWeight": "600"
+					"fontWeight": "500"
 				}
 			},
 			"h6": {

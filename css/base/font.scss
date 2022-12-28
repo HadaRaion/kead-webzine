@@ -129,7 +129,7 @@
 
 .text-7xl {
 	font-size: 3.75rem; /* 60px */
-	line-height: 1;
+	line-height: 1.4;
 
 	@include atSmall {
 		font-size: 2.5rem; /* 48px */
@@ -138,12 +138,10 @@
 
 .text-8xl {
 	font-size: 4.5rem; /* 72px */
-	line-height: 1;
 }
 
 .text-9xl {
 	font-size: 6rem; /* 96px */
-	line-height: 1;
 
 	@include atSmall {
 		font-size: 4rem; /* 48px */
