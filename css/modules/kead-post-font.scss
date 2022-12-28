@@ -8,11 +8,9 @@
 
 	h1 {
 		font-size: 3rem; /* 48px */
-		line-height: 4.4rem;
 
 		@include atSmall {
 			font-size: 2.25rem; /* 36px */
-			line-height: 2.6rem;
 		}
 	}
 
@@ -54,6 +52,10 @@
 	img {
 		max-width: 100%;
 		width: auto;
+
+		@include atMedium {
+			width: 100%;
+		}
 	}
 
 	figure {
@@ -62,6 +64,7 @@
 
 		img {
 			height: 100%;
+			object-fit: cover;
 		}
 	}
 

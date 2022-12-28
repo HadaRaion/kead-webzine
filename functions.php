@@ -47,10 +47,3 @@ function noSubsAdminBar() {
     show_admin_bar(false);
   }
 }
-
-// function tabor_setup() {
-// add_theme_support( 'editor-styles' );
-// add_editor_style( 'assets/css/style-editor.css' );
-// }
-
-// add_action( 'after_setup_theme', 'tabor_setup' );

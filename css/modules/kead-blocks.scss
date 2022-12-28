@@ -12,10 +12,10 @@ h6.has-background {
 }
 
 .wp-block-lazyblock-kead-title {
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 
 	@include atSmall {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -40,9 +40,32 @@ h6.has-background {
 	margin-bottom: 0;
 }
 
+.wp-block-image figcaption {
+	text-align: center;
+	font-size: 0.875rem; /* 14px */
+
+	@include atSmall {
+		font-size: 0.75rem; /* 12px */
+	}
+}
+
 .wp-block-separator {
 	border: none;
 	border-top: 1px dashed #d7702b;
+	margin: 4rem 0;
+
+	@include atMedium {
+		margin: 3rem 0;
+	}
+
+	@include atSmall {
+		margin: 2rem 0;
+	}
+}
+
+.wp-block-kead-separator {
+	border: none;
+	border-top: 1px dashed;
 	margin: 4rem 0;
 
 	@include atMedium {
@@ -151,19 +174,17 @@ h6.has-background {
 }
 
 // 함께하는 일터
-.job-interview {
-	.wp-block-lazyblock-job-interview {
-		min-height: 100%;
-		padding: 2rem;
-		color: #fff;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+.wp-block-lazyblock-job-interview {
+	min-height: 100%;
+	padding: 2rem;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-		.job-interview-name {
-			border-bottom: 1px solid #fff;
-			margin-bottom: 1rem;
-		}
+	.job-interview-name {
+		border-bottom: 1px solid #fff;
+		margin-bottom: 1rem;
 	}
 }
 

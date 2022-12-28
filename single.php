@@ -40,7 +40,7 @@
 
     <section class="single-post__contents p-top-large p-bottom-large ">
       <div class="container">
-        <?php if ( $category !== '공감 人스타'): ?>
+        <?php if ( $category !== '공감 人스타' && $category !== '#공감태그' && $category !== 'KEAD 뉴스' && $category !== 'KEAD SNS'): ?>
           <figure>
             <?php the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); ?>
               <?php if (get_the_post_thumbnail_caption()): ?>
