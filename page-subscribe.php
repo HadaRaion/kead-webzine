@@ -34,7 +34,7 @@
 
 			<div class="stb_form_policy p-top-small">
 				<div class="stb_form_modal stb_form_policy_text blind" id="stb_form_policy_modal">
-        	<h2 class="stb_form_modal_title font-xl font-500">개인정보 수집 및 이용</h2>
+        	<h2 class="stb_form_modal_title text-xl font-500">개인정보 수집 및 이용</h2>
 					<p class="stb_form_modal_text text-base p-top-xs">
             ‘장애인과 일터’는 웹진 구독신청에 수집되는 귀하의 개인정보를 중요시하며 「개인정보보호법」을 준수하고 있습니다.<br />
             - 개인정보 수집 항목 : 이메일<br />

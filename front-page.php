@@ -34,7 +34,7 @@ $args3 = array(
   	</div>
 		<div class="cover-story cover-story--desktop font-white t-center">
 				<div class="text-xl t-500">COVER STORY</div>
-				<h1 class="">두근두근 ‘새로운 시작이야’</h1>
+				<h1 class="p-top-xs p-bottom-xs">두근두근 ‘새로운 시작이야’</h1>
 				<p class="text-xl t-500">
 					2023년 새해가 밝았습니다.</br>
 					다사다난했던 지난날을 뒤로하고 새로운 한 해에는 부디 행복한 일들만 가득하길 바라는 마음을 담아봅니다.</br>
@@ -43,7 +43,7 @@ $args3 = array(
 		</div>
 		<div class="cover-story cover-story--mobile font-white t-center">
 			<div class="text-xl t-500">COVER STORY</div>
-			<h1 class="">두근두근 ‘새로운 시작이야’</h1>
+			<h1 class="p-top-xs p-bottom-xs">두근두근 ‘새로운 시작이야’</h1>
 			<p class="text-xl t-500">
 				2023년 새해가 밝았습니다.</br>
 				다사다난했던 지난날을 뒤로하고</br>
@@ -56,7 +56,8 @@ $args3 = array(
 		</div>
 	</section>
 
-	<section class="main-links p-top ">
+	<p class="text-base p-top-xs t-center">[장애인과 일터]는 텍스트를 자동으로 읽어주는 보이스오버 기능을 지원합니다.</p>
+	<section class="main-links p-top">
 		<div class="container">
 			<ul>
 				<li>

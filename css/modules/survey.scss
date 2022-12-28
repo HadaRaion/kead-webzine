@@ -1,4 +1,11 @@
 .survey {
+	&.single-post .single-post__contents {
+		ul,
+		li {
+			list-style: none;
+		}
+	}
+
 	.container {
 		padding-left: 0;
 		padding-right: 0;
