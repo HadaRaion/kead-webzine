@@ -13,7 +13,6 @@ $args1 = array(
 $args2 = array(
 	'post_type' => $thisMonth,
 	'category_name' => 'part2',
-	'category_name' => 'part1',
 	'orderby' 	=> 'date',
 	'order'   => 'ASC',
 );
@@ -21,7 +20,6 @@ $args2 = array(
 $args3 = array(
 	'post_type' => $thisMonth,
 	'category_name' => 'part3',
-	'category_name' => 'part1',
 	'orderby' 	=> 'date',
 	'order'   => 'ASC',
 );
