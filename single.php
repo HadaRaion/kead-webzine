@@ -13,8 +13,10 @@
     $parentCategoryID =  get_the_category()[0]->category_parent;
     $parentCategory = get_the_category_by_ID($parentCategoryID);
     $parentCategorySlug = get_category($parentCategoryID)->slug;
-    $category = get_the_category()[0]->cat_name;
 
+    $category = get_the_category()[0]->cat_name;    
+    $categoryID = get_the_category()[0]->term_id;
+    $categorySlug = get_category($categoryID)->slug;
 ?>
 
 
@@ -39,7 +41,11 @@
 
     <section class="single-post__contents p-top-large p-bottom-large ">
       <div class="container">
-        <?php if ( $category !== '공감 人스타' && $category !== '#공감태그' && $category !== 'KEAD 뉴스' && $category !== 'KEAD SNS' && $category !== 'KEAD 툰' && $category !== '구독 이벤트'): ?>
+
+        <?php  
+          $array= array('kead-news', 'kead-toon', 'kead-sns', 'event', 'instar', 'tags');
+          if (!in_array($categorySlug, $array)):
+        ?>
           <figure>
             <?php the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); ?>
               <?php if (get_the_post_thumbnail_caption()): ?>
@@ -47,6 +53,7 @@
               <?php endif; ?>
           </figure>
         <?php endif; ?>
+
         <?php 
           $audioSrc = get_field('kead-audio');
           if ( $audioSrc  ) :

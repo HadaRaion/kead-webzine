@@ -195,10 +195,10 @@ $args3 = array(
 
 								<div class="post__thumbnail">
 									<img
-										srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
-										src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
+										srcset="<?php the_post_thumbnail_url('kead-thumbnail-mini') ?>, <?php the_post_thumbnail_url('kead-thumbnail-mini-2x') ?> 2x"
+										src="<?php the_post_thumbnail_url('kead-thumbnail-mini') ?>"
 										alt="<?php echo $alt_text ;?>"
-									/>
+										/>
 								</div>
 								<div class="post__title">
 									<h2 class="text-2xl"><?php the_title(); ?></h2>

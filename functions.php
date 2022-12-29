@@ -19,9 +19,9 @@ function kead_features() {
   add_image_size('kead-thumbnail', 380, 285, true);
   add_image_size('kead-thumbnail-2x', 760, 570, true);
   add_image_size('kead-thumbnail-wide', 768, 276, true);
-  add_image_size('kead-thumbnail-wide-2x ', 1536, 552, true);
+  add_image_size('kead-thumbnail-wide-2x', 1536, 552, true);
   add_image_size('kead-thumbnail-mini', 380, 187, true);
-  add_image_size('kead-thumbnail-mini-2x ', 760, 374, true);
+  add_image_size('kead-thumbnail-mini-2x', 760, 374, true);
 }
 
 add_action('after_setup_theme', 'kead_features');
