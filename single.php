@@ -6,7 +6,6 @@
 
   if ( in_category('review') ) : include 'single-review.php';
   elseif ( in_category('consulting') ) : include 'single-consulting.php';
-  elseif ( in_category('event') ) : include 'single-event.php';
   else :
     
     if (  have_posts() ) :
@@ -40,7 +39,7 @@
 
     <section class="single-post__contents p-top-large p-bottom-large ">
       <div class="container">
-        <?php if ( $category !== '공감 人스타' && $category !== '#공감태그' && $category !== 'KEAD 뉴스' && $category !== 'KEAD SNS' && $category !== 'KEAD 툰'): ?>
+        <?php if ( $category !== '공감 人스타' && $category !== '#공감태그' && $category !== 'KEAD 뉴스' && $category !== 'KEAD SNS' && $category !== 'KEAD 툰' && $category !== '구독 이벤트'): ?>
           <figure>
             <?php the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); ?>
               <?php if (get_the_post_thumbnail_caption()): ?>
