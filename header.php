@@ -54,7 +54,7 @@
   );
 ?>
 
-<body class="<?php echo $thisMonth ?>" <?php body_class(); ?>>
+<body <?php body_class($thisMonth); ?>>
 
   <div class="skip" tabindex="-1">
     <a href="#contents" class="skip__link">본문 바로가기</a>
