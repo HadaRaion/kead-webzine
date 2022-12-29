@@ -32,25 +32,29 @@
   $menuArgs1 = array(
     'post_type' => $thisMonth,
     'category_name' => 'part1',
-    'order_by' => 'menu_order',
+    'orderby' 	=> 'date',
+    'order'   => 'ASC',
   );
 
   $menuArgs2 = array(
     'post_type' => $thisMonth,
     'category_name' => 'part2',
-    'order_by' => 'menu_order',
+    'orderby' 	=> 'date',
+    'order'   => 'ASC',
   );
 
   $menuArgs3 = array(
     'post_type' => $thisMonth,
     'category_name' => 'part3',
-    'order_by' => 'menu_order',
+    'orderby' 	=> 'date',
+    'order'   => 'ASC',
   );
 
   $menuArgs4 = array(
     'post_type' => $thisMonth,
     'category_name' => 'part4',
-    'order_by' => 'menu_order',
+    'orderby' 	=> 'date',
+    'order'   => 'ASC',
   );
 ?>
 
@@ -97,7 +101,7 @@
     <div class="nav">
       <div class="nav__left">
         <div class="nav__left__title kead-webzine-logo">
-          <h5 class="headline--5">함께 일하는 세상을 만듭니다.</h5>
+          <h5 class="headline--5">함께 일하는 세상을 만듭니다</h5>
           <div class="kead-webzine-logo__img">
             <img src="<?php echo get_theme_file_uri('/images/logos/logo-' . $thisMonth . '.svg'); ?>"
               alt="장애인과 일터 1월호 로고">
@@ -108,16 +112,16 @@
         <div class="nav__left__cover">
           <div class="nav__left__cover__img">
             <img srcset="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '@2x.jpg 2x'); ?>"
-              src=”<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>” />
+              src="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>" />
           </div>
           <div class="nav__left__cover__links">
-            <a class="btn btn--sm" href="<?php echo site_url('pdf/kead-' . $thisMonth . '.pdf'); ?>" target="_blank" title="새창에서 지난호 pdf 열기"> 
+            <a class="btn btn--sm btn--between" href="<?php echo site_url('pdf/kead-' . $thisMonth . '.pdf'); ?>" target="_blank" title="새창에서 지난호 pdf 열기"> 
               <span>E-BOOK 보기</span>
             </a>
-            <a class="btn btn--sm" href="<?php echo site_url('/subscribe'); ?>">
-              <span>구독신청하기</span>
+            <a class="btn btn--sm btn--between" href="<?php echo site_url('/subscribe'); ?>">
+              <span>구독 신청하기</span>
             </a>
-            <a class="btn btn--sm" href="<?php echo site_url('/previous'); ?>">
+            <a class="btn btn--sm btn--between" href="<?php echo site_url('/previous'); ?>">
               <span>지난호 보기</span>
             </a>
           </div>
@@ -130,7 +134,7 @@
           <li>
             <div class="part-logo part-logo--sm part-logo--1" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part1.svg'); ?>);"></div>
             <div class="menu">
-              <h2 class="text-3xl">공감, 두드리다</h2>
+              <h2 class="text-2xl">공감, 두드리다</h2>
 
               <ul class="menu-list">
                 <?php 
@@ -141,7 +145,7 @@
                   $subCategory =  get_the_category()[0]->cat_name;
                 ?>
                 <li>
-                  <a class="text-2xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
+                  <a class="text-xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
                 </li>
                 <?php } wp_reset_postdata();                   
               ?>
@@ -153,7 +157,7 @@
           <li>
             <div class="part-logo part-logo--sm part-logo--2" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part2.svg'); ?>);"></div>
             <div class="menu">
-              <h2 class="text-3xl">공감, 만나다</h2>
+              <h2 class="text-2xl">공감, 만나다</h2>
 
               <ul class="menu-list">
                 <?php 
@@ -164,7 +168,7 @@
                   $subCategory =  get_the_category()[0]->cat_name;
                 ?>
                 <li>
-                  <a class="text-2xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
+                  <a class="text-xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
                 </li>
                 <?php } wp_reset_postdata();                   
               ?>
@@ -175,7 +179,7 @@
           <li>
             <div class="part-logo part-logo--sm part-logo--3" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part3.svg'); ?>);"></div>
             <div class="menu">
-              <h2 class="text-3xl">공감, 함께하다</h2>
+              <h2 class="text-2xl">공감, 함께하다</h2>
 
               <ul class="menu-list">
                 <?php 
@@ -186,7 +190,7 @@
                   $subCategory =  get_the_category()[0]->cat_name;
                 ?>
                 <li>
-                  <a class="text-2xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
+                  <a class="text-xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
                 </li>
                 <?php } wp_reset_postdata();                   
               ?>
@@ -197,7 +201,7 @@
           <li>
             <div class="part-logo part-logo--sm part-logo--4" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part4.svg'); ?>);"></div>
             <div class="menu">
-              <h2 class="text-3xl">EVENT</h2>
+              <h2 class="text-2xl">EVENT</h2>
 
               <ul class="menu-list">
                 <?php 
@@ -208,7 +212,7 @@
                   $subCategory =  get_the_category()[0]->cat_name;
                 ?>
                 <li>
-                  <a class="text-2xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
+                  <a class="text-xl" href="<?php the_permalink(); ?>"><?php echo  $subCategory ?></a>
                 </li>
                 <?php } wp_reset_postdata();                   
               ?>

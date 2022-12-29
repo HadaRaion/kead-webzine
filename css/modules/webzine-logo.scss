@@ -8,7 +8,7 @@
 		}
 
 		@include atSmall {
-			font-size: 10px;
+			font-size: 8px;
 		}
 	}
 
@@ -22,15 +22,15 @@
 		}
 
 		@include atSmall {
-			width: 180px;
-			margin-top: 0.7rem;
+			width: 140px;
+			margin-top: 0.6rem;
 		}
 	}
 }
 
 .part-logo {
-	width: 96px;
-	height: 96px;
+	width: 84px;
+	height: 84px;
 	border-radius: 50%;
 	overflow: hidden;
 	background-size: cover;

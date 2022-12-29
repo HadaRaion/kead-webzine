@@ -10,11 +10,11 @@
     
     <ul class="p-top-small">
       <li class="">
-        <a href="<?php echo site_url('pdf/202212.pdf'); ?>" target="_blank" title="지난호 새창보기">
-          <img src="<?php echo get_theme_file_uri('/images/covers/202212.jpg'); ?>" alt="2022년 12월호 표지">
+        <a href="<?php echo site_url('pdf/202210.pdf'); ?>"  target="_blank" title="지난호 새창보기">
+          <img src="<?php echo get_theme_file_uri('/images/covers/202210.jpg'); ?>" alt="2022년 10월호 표지">
         </a>
         <h2 class="text-2xl t-center t-500">
-          [VOL.332]<br />2022년 12월호
+          [VOL.330]<br />2022년 10월호
         </h2>
       </li>
 
@@ -28,11 +28,11 @@
       </li>
 
       <li class="">
-        <a href="<?php echo site_url('pdf/202210.pdf'); ?>"  target="_blank" title="지난호 새창보기">
-          <img src="<?php echo get_theme_file_uri('/images/covers/202210.jpg'); ?>" alt="2022년 10월호 표지">
+        <a href="<?php echo site_url('pdf/202212.pdf'); ?>" target="_blank" title="지난호 새창보기">
+          <img src="<?php echo get_theme_file_uri('/images/covers/202212.jpg'); ?>" alt="2022년 12월호 표지">
         </a>
         <h2 class="text-2xl t-center t-500">
-          [VOL.330]<br />2022년 10월호
+          [VOL.332]<br />2022년 12월호
         </h2>
       </li>
     </ul>

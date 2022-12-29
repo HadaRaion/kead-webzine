@@ -35,11 +35,7 @@
         
         <?php the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); ?>
 
-        <div class="single-post-title p-top p-bottom">
-          <h1 class="text-7xl t-center color-part3">알쏭달쏭 직장생활</h1>
-          <h1 class="text-7xl t-center">“이런 고민 어떻게 할까요?”</h1>
-          <h3 class="text-2xl p-top font-500">직장이란 모두에게 소중한 공간이면서도 온갖 고민의 발상지이기도 합니다. 나만 이런 문제를 겪는지 궁금하고 불안하며 힘든 일이 있으신가요? [장애인과 일터]가 여러분의 사연을 듣고 함께 고민합니다. </h3>
-        </div>
+        <div class="p-top"><?php the_content(); ?></div>
 
         <div class="consulting--info bg-white">
           <p class="text-2xl font-500">[장애인과 일터]에 직장생활의 크고 작은 고민 내용을 보내주세요. 내용이 소개된 분께 소정의 선물을 드립니다. ‘익명 참여’라고 적으시면 익명의 독자로 사연을 소개합니다. 단, 보내시는 내용 하단에 이름과 휴대폰 번호를 기재하셔야 모바일 기프티콘을 받으실 수 있습니다.</p>

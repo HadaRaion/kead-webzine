@@ -49,7 +49,7 @@
     </div>
     
     <address class="site-footer__address">
-      <p class="text-base">3619 경기도 성남시 분당구 구미로 173번길 59 (구미동)</p>
+      <p class="text-base">13619 경기도 성남시 분당구 구미로 173번길 59 (구미동)</p>
       <p class="text-base">대표 <a href="tel:+8215881519">1588-1519</a></p>
       <p class="text-base">TEL <a href="tel:+82317287257">031-728-7257</a></p>
       <p class="text-base">FAX 050-3470-0022</p>

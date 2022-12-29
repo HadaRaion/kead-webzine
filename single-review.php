@@ -42,8 +42,8 @@
           </h2>
         </div>
 
-        <div class="kead-reviews p-bottom-large">
-          <ul class="">
+        <!-- <div class="kead-reviews p-bottom-large"> -->
+          <!-- <ul class=""> -->
             <?php 
              $reviewer1 = get_field('kead-review-name-1');
              $reviewer2 = get_field('kead-review-name-2');
@@ -81,8 +81,8 @@
               <p class="text-xl"><?php echo $review4 ?></p>
             </li>
             <?php endif; ?>
-          </ul>
-        </div>
+          <!-- </ul> -->
+        <!-- </div> -->
         <div class="survey-form p-bottom">
           <div class="survey-form__wrapper">
             <h3 class="t-center text-4xl p-top">

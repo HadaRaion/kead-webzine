@@ -7,8 +7,8 @@
 	border-radius: 999em;
 	background-color: var(--color-part1);
 	color: #fff;
-	font-size: 1.4rem;
-	font-weight: bold;
+	font-size: 1.25rem;
+	font-weight: 500;
 
 	@include atLarge {
 		justify-content: space-between;
@@ -34,7 +34,7 @@
 
 	span {
 		margin-bottom: 1px;
-		margin-right: 2rem;
+		margin-right: 0.4rem;
 
 		@include atMedium {
 			margin-right: 0;
@@ -44,8 +44,8 @@
 	&::after {
 		content: '';
 		display: block;
-		width: 1.8rem;
-		height: 1.8rem;
+		width: 1.6rem;
+		height: 1.6rem;
 		background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='m15 32.57l12-12.69L15 7.57' style='fill:none%3B stroke:%23fff%3B stroke-width:5px%3B'/%3E%3C/svg%3E");
 		background-size: cover;
 
@@ -55,6 +55,10 @@
 		}
 	}
 
+	&--between {
+		justify-content: space-between;
+	}
+
 	&--sm {
 		width: 12rem;
 		min-width: 10rem;
@@ -62,7 +66,6 @@
 		padding-left: 1.5rem;
 		padding-right: 1rem;
 		font-size: 1.1rem;
-		justify-content: space-between;
 
 		@include atSmall {
 			width: 10rem;
