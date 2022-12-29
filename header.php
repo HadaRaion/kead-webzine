@@ -130,7 +130,7 @@
           <li>
             <div class="part-logo part-logo--sm part-logo--1" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part1.svg'); ?>);"></div>
             <div class="menu">
-              <h1 class="text-3xl">공감, 두드리다</h1>
+              <h2 class="text-3xl">공감, 두드리다</h2>
 
               <ul class="menu-list">
                 <?php 
@@ -153,7 +153,7 @@
           <li>
             <div class="part-logo part-logo--sm part-logo--2" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part2.svg'); ?>);"></div>
             <div class="menu">
-              <h1 class="text-3xl">공감, 만나다</h1>
+              <h2 class="text-3xl">공감, 만나다</h2>
 
               <ul class="menu-list">
                 <?php 
@@ -175,7 +175,7 @@
           <li>
             <div class="part-logo part-logo--sm part-logo--3" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part3.svg'); ?>);"></div>
             <div class="menu">
-              <h1 class="text-3xl">공감, 함께하다</h1>
+              <h2 class="text-3xl">공감, 함께하다</h2>
 
               <ul class="menu-list">
                 <?php 
@@ -197,7 +197,7 @@
           <li>
             <div class="part-logo part-logo--sm part-logo--4" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part4.svg'); ?>);"></div>
             <div class="menu">
-              <h1 class="text-3xl">EVENT</h1>
+              <h2 class="text-3xl">EVENT</h2>
 
               <ul class="menu-list">
                 <?php 

@@ -16,7 +16,13 @@
 				align-items: center;
 
 				@include atMedium {
+					flex-wrap: wrap;
 					margin-bottom: 1rem;
+					width: 100%;
+
+					span {
+						display: block;
+					}
 				}
 
 				&::before {
