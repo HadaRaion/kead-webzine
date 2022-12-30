@@ -55,14 +55,6 @@
 		}
 	}
 
-	&--between {
-		justify-content: space-between;
-
-		@include atSmall {
-			width: 9rem;
-		}
-	}
-
 	&--sm {
 		width: 12rem;
 		min-width: 10rem;
@@ -93,6 +85,14 @@
 				width: 1.2rem;
 				height: 1.2rem;
 			}
+		}
+	}
+
+	&--between {
+		justify-content: space-between;
+
+		@include atSmall {
+			width: 9rem;
 		}
 	}
 
