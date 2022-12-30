@@ -183,6 +183,8 @@ $args3 = array(
 					<a class="post" href="<?php the_permalink(); ?>">
 						<article>
 							<div class="post__category"><span class="text-xl font-500 font-white"><?php echo  $subCategory ?></span></div>
+
+
 							<?php if ($subCategory === 'KEAD 뉴스' || $subCategory === 'KEAD SNS'): ?>
 							<div class="post__thumbnail">
 								<img
@@ -195,8 +197,8 @@ $args3 = array(
 
 								<div class="post__thumbnail">
 									<img
-										srcset="<?php the_post_thumbnail_url('kead-thumbnail-mini') ?>, <?php the_post_thumbnail_url('kead-thumbnail-mini-2x') ?> 2x"
-										src="<?php the_post_thumbnail_url('kead-thumbnail-mini') ?>"
+										srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
+										src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
 										alt="<?php echo $alt_text ;?>"
 										/>
 								</div>
