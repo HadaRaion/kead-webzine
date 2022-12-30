@@ -94,17 +94,13 @@ h6.has-background {
 		object-fit: contain;
 	}
 
-	@include atSmall {
-		margin-bottom: 2rem;
-	}
-
 	.btn {
 		margin-top: 2rem;
 		margin-left: auto;
 		margin-right: auto;
 
 		@include atSmall {
-			margin-top: 1rem;
+			margin-top: 0.2rem;
 		}
 	}
 }
