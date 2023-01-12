@@ -77,8 +77,18 @@ h6.has-background {
 	}
 }
 
+.single-post figure img {
+	width: 100%;
+}
+
+.wp-block-image.caption-left figcaption {
+	text-align: left;
+}
+
+.single-post .wp-block-image figcaption,
 .wp-block-lazyblock-kead-caption {
 	margin-top: 1rem;
+	margin-bottom: 0;
 
 	@include atSmall {
 		margin-top: 0.5rem;
