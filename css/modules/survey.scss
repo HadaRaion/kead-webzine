@@ -124,6 +124,11 @@
 				}
 			}
 
+			.wpforms-form button[type='submit']:focus,
+			.wpforms-form button[type='submit']:active {
+				background-color: var(--color-part1);
+			}
+
 			.kead-input {
 				display: flex;
 				align-self: center;
@@ -242,6 +247,22 @@
 					width: 14rem;
 					height: 2.4rem;
 					font-size: 1.1rem;
+				}
+			}
+
+			.kead-select {
+				.choices.is-open .choices__inner,
+				.choices__inner {
+					border: 1px solid #000;
+					background-color: #e5e4e1;
+					border-radius: 0;
+				}
+			}
+
+			.kead-radio {
+				display: none;
+				ul li label {
+					font-size: 1rem;
 				}
 			}
 		}

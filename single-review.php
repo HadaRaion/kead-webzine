@@ -2,7 +2,6 @@
   $month = get_post_type();
   get_header( '', array( 'month' => $month ) );
 
-
   if (  have_posts() ) :
 
   $parentCategoryID =  get_the_category()[0]->category_parent;
@@ -11,8 +10,6 @@
   $category = get_the_category()[0]->cat_name;
 
 ?>
-
-
 
   <main id="contents" class="single-post survey <?php echo $parentCategorySlug; ?>">
     <section class="single-post__top">
@@ -32,34 +29,33 @@
 
     <?php while ( have_posts() ) : the_post();  ?>
 
-    <section class="single-post__contents p-top-large p-bottom-large ">
+    <section class="single-post__contents p-top-large p-bottom-large">
       <div class="container">
 
-        <div class="page-banner p-top-large p-bottom-large">
-          <h1 class="page-banner__title text-7xl p-top-small">독자통신</h1>
+        <div class="page-banner p-bottom-large">
+          <h1 class="page-banner__title text-7xl">독자통신</h1>
           <h2 class="page-banner__title text-6xl font-400">
             독자 여러분의 의견을<span class="line-break"> 남겨주세요</span>
           </h2>
         </div>
 
-        <!-- <div class="kead-reviews p-bottom-large"> -->
-          <!-- <ul class=""> -->
-            <?php 
-             $reviewer1 = get_field('kead-review-name-1');
-             $reviewer2 = get_field('kead-review-name-2');
-             $reviewer3 = get_field('kead-review-name-3');
-             $reviewer4 = get_field('kead-review-name-4');
-             $review1 = get_field('kead-review-1');
-             $review2 = get_field('kead-review-2');
-             $review3 = get_field('kead-review-3');
-             $review4 = get_field('kead-review-4');
-            ?>
-            <?php if ( $reviewer1  ) : ?>
+        <div class="kead-reviews">
+          <?php 
+            $reviewer1 = get_field('kead-review-name-1');
+            $reviewer2 = get_field('kead-review-name-2');
+            $reviewer3 = get_field('kead-review-name-3');
+            $reviewer4 = get_field('kead-review-name-4');
+            $review1 = get_field('kead-review-1');
+            $review2 = get_field('kead-review-2');
+            $review3 = get_field('kead-review-3');
+            $review4 = get_field('kead-review-4');
+          ?>
+          <?php if ( $reviewer1  ) : ?>
+          <ul class="p-bottom-large">
             <li>
               <div class="text-3xl font-bold kead-reviews__name"><?php echo $reviewer1 ?></div>
               <p class="text-xl"><?php echo $review1 ?></p>
             </li>
-            <?php endif; ?>
 
             <?php if ( $reviewer2  ) : ?>
             <li>
@@ -81,8 +77,9 @@
               <p class="text-xl"><?php echo $review4 ?></p>
             </li>
             <?php endif; ?>
-          <!-- </ul> -->
-        <!-- </div> -->
+          </ul>
+          <?php endif; ?>
+        </div>
         <div class="survey-form p-bottom">
           <div class="survey-form__wrapper">
             <h3 class="t-center text-4xl p-top">

@@ -32,10 +32,7 @@
 
     <section class="single-post__contents p-top-large p-bottom-large">
       <div class="container">
-        
-        <?php the_post_thumbnail( 'post-thumbnail', ['class' => 'kead-thumb'] ); ?>
-
-        <div class="p-top"><?php the_content(); ?></div>
+        <div class=""><?php the_content(); ?></div>
 
         <div class="consulting--info bg-white">
           <p class="text-2xl font-500">[장애인과 일터]에 직장생활의 크고 작은 고민 내용을 보내주세요. 내용이 소개된 분께 소정의 선물을 드립니다. ‘익명 참여’라고 적으시면 익명의 독자로 사연을 소개합니다. 단, 보내시는 내용 하단에 이름과 휴대폰 번호를 기재하셔야 모바일 기프티콘을 받으실 수 있습니다.</p>
