@@ -1,8 +1,10 @@
 <?php 
-get_header();
-
 // 매달 교체
 $thisMonth = 'january';
+
+get_header();
+// get_header( '', array( 'month' => $thisMonth ) );
+
 $args1 = array(
 	'post_type' => $thisMonth,
 	'category_name' => 'part1',

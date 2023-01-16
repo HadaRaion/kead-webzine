@@ -142,46 +142,46 @@ h6.has-background {
 }
 
 // 공감 人스타
-.kead-interviewee {
-	gap: 0;
+.wp-block-lazyblock-kead-interview-box {
+	height: 100%;
+}
 
-	.wp-block-lazyblock-kead-interview-box {
-		height: 100%;
+.interviewee-box {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem 0;
+
+	@include atMedium {
+		padding: 2rem 0;
 	}
 
-	.interviewee-box {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		padding: 4rem 0;
+	@include atSmall {
+		padding: 1rem 0;
+	}
+
+	&__mark {
+		width: 4rem;
 
 		@include atMedium {
-			padding: 2rem 0;
+			width: 3rem;
 		}
 
 		@include atSmall {
-			padding: 1rem 0;
-		}
-
-		&__mark {
-			width: 4rem;
-
-			@include atMedium {
-				width: 3rem;
-			}
-
-			@include atSmall {
-				width: 2rem;
-				margin: 1rem;
-			}
-		}
-
-		&__quote {
-			line-height: 1.4;
+			width: 2rem;
+			margin: 1rem;
 		}
 	}
+
+	&__quote {
+		line-height: 1.4;
+	}
+}
+
+.kead-interviewee {
+	gap: 0;
 }
 
 // 함께하는 일터

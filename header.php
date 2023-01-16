@@ -104,7 +104,7 @@
           <h5 class="headline--5">함께 일하는 세상을 만듭니다</h5>
           <div class="kead-webzine-logo__img">
             <img src="<?php echo get_theme_file_uri('/images/logos/logo-' . $thisMonth . '.svg'); ?>"
-              alt="장애인과 일터 1월호 로고">
+              alt="장애인과 일터 로고">
           </div>
 
         </div>

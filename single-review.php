@@ -59,14 +59,14 @@
 
             <?php if ( $reviewer2  ) : ?>
             <li>
-              <div class="text-3xl font-bold kead-reviews__name">bbb<?php echo $reviewer2 ?></div>
+              <div class="text-3xl font-bold kead-reviews__name"><?php echo $reviewer2 ?></div>
               <p class="text-xl"><?php echo $review2 ?></p>
             </li>
             <?php endif; ?>
 
             <?php if ( $reviewer3  ) : ?>
             <li>
-              <div class="text-3xl font-bold kead-reviews__name"><?php echo $reviewer3 ?>aa</div>
+              <div class="text-3xl font-bold kead-reviews__name"><?php echo $reviewer3 ?></div>
               <p class="text-xl"><?php echo $review3 ?></p>
             </li>
             <?php endif; ?>
