@@ -111,7 +111,7 @@
         <div class="nav__left__cover">
           <div class="nav__left__cover__img">
             <img srcset="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '@2x.jpg 2x'); ?>"
-              src="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>" alt="장애인과 일터 표지"/>
+              src="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>" alt="장애인과 일터 1웛호 표지 일러스트 - 두근두근 새로운 시작이야"/>
           </div>
           <div class="nav__left__cover__links">
             <a class="btn btn--sm btn--between" href="<?php echo site_url('pdf/kead-' . $thisMonth . '.pdf'); ?>" target="_blank" title="새창에서 지난호 pdf 열기"> 
