@@ -1,7 +1,9 @@
 .kead-webzine-logo {
-	h5 {
+	&__title {
+		display: block;
 		font-size: 14px;
 		padding-left: 3px;
+		font-weight: 500;
 
 		@include atMedium {
 			font-size: 12px;
@@ -13,6 +15,7 @@
 	}
 
 	&__img {
+		display: block;
 		width: 260px;
 		margin-top: 0.7rem;
 

@@ -100,19 +100,18 @@
   <nav class="site-nav">
     <div class="nav">
       <div class="nav__left">
-        <div class="nav__left__title kead-webzine-logo">
-          <h5 class="headline--5">함께 일하는 세상을 만듭니다</h5>
-          <div class="kead-webzine-logo__img">
+        <h1 class="kead-webzine-logo">
+          <span class="kead-webzine-logo__title">함께 일하는 세상을 만듭니다</span>
+          <span class="kead-webzine-logo__img">
             <img src="<?php echo get_theme_file_uri('/images/logos/logo-' . $thisMonth . '.svg'); ?>"
               alt="장애인과 일터 로고">
-          </div>
-
-        </div>
+          </span>
+        </h1>
 
         <div class="nav__left__cover">
           <div class="nav__left__cover__img">
             <img srcset="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '@2x.jpg 2x'); ?>"
-              src="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>" />
+              src="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>" alt="장애인과 일터 표지"/>
           </div>
           <div class="nav__left__cover__links">
             <a class="btn btn--sm btn--between" href="<?php echo site_url('pdf/kead-' . $thisMonth . '.pdf'); ?>" target="_blank" title="새창에서 지난호 pdf 열기"> 

@@ -27,13 +27,13 @@
 ?>
 <main id="contents" class="main-page">
 	<section class="banner" style="background-image: url(<?php echo get_theme_file_uri('/images/banners/banner-' . $post_slug . '.svg'); ?>);">
-	  <div class="kead-webzine-logo">
-			<h5 class="headline--5 font-white">함께 일하는 세상을 만듭니다</h5>
-			<div class="kead-webzine-logo__img">
+	  <h1 class="kead-webzine-logo">
+			<span class="kead-webzine-logo__title font-white">함께 일하는 세상을 만듭니다</span>
+			<span class="kead-webzine-logo__img">
 				<img src="<?php echo get_theme_file_uri('/images/logos/logo-' . $post_slug . '-white.svg'); ?>"
 					alt="장애인과 일터 로고">
-			</div>
-  	</div>
+			</span>
+  	</h1>
 		<div class="cover-story cover-story--desktop font-white t-center">
 				<div class="text-xl t-500">COVER STORY</div>
 				<h1 class="p-top-xs p-bottom-xs">두근두근 ‘새로운 시작이야’</h1>
@@ -87,9 +87,9 @@
 			<div class="article part1 p-top-large">
 				<div class="article__title">
 					<div class="part-logo part-logo--1" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part1.svg'); ?>);"></div>
-					<h1 class="text-5xl font-bold">공감, 두드리다</h1>
+					<h1 class="text-5xl font-bold" id="kead-part1">공감, 두드리다</h1>
 				</div>
-				<div class="article__contents p-top">
+				<ul class="article__contents p-top" aria-labelledby="kead-part1">
 					<?php 
 
 					$query1 = new WP_Query( $args1 );
@@ -99,11 +99,10 @@
 						$subCategory =  get_the_category()[0]->cat_name;
 						$image_id = get_post_thumbnail_id(get_the_ID());
 						$alt_text = get_post_meta($image_id , '_wp_attachment_image_alt', true);?>
-					
-					<a class="post" href="<?php the_permalink(); ?>">
-						<article>
-							<div class="post__category"><span class="text-xl font-500 font-white"><?php echo  $subCategory ?></span></div>
-							<div class="post__thumbnail">
+					<li>
+						<a class="post" href="<?php the_permalink(); ?>" aria-label="<?php the_title(); ?> 기사보기">
+							<span class="post__category text-xl font-500 font-white"><?php echo  $subCategory ?></span>
+							<span class="post__thumbnail">
 								<?php if ($subCategory === '공감 테마'): ?>
 									<picture>
 										<source media="(max-width: 960px)" srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x" />
@@ -117,24 +116,24 @@
 										alt="<?php echo $alt_text ;?>"
 									/>
 								<?php endif; ?>
-							</div>
-							<div class="post__title">
-								<h2 class="text-2xl"><?php the_title(); ?></h2>
-							</div>
-						</article>
-					</a>
+							</span>
+							<span class="post__title text-2xl font-500">
+							<?php the_title(); ?>
+							</span>
+						</a>
+					</li>
 					<?php }
 					wp_reset_postdata();
 					?> 
-				</div>
+				</ul>
 			</div>
 
 			<div class="article part2 p-top-large">
 				<div class="article__title">
 					<div class="part-logo part-logo--2" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part2.svg'); ?>);"></div>
-					<h1 class="text-5xl font-bold">공감, 만나다</h1>
+					<h1 class="text-5xl font-bold" id="kead-part2">공감, 만나다</h1>
 				</div>
-				<div class="article__contents p-top">
+				<ul class="article__contents p-top" aria-labelledby="kead-part2">
 					<?php 
 					$query2 = new WP_Query( $args2 );
 
@@ -143,34 +142,31 @@
 						$subCategory =  get_the_category()[0]->cat_name;
 						$image_id = get_post_thumbnail_id(get_the_ID());
 						$alt_text = get_post_meta($image_id , '_wp_attachment_image_alt', true);?>
-					
-					<a class="post" href="<?php the_permalink(); ?>">
-						<article>
-							<div class="post__category"><span class="text-xl font-500 font-white"><?php echo  $subCategory ?></span></div>
-							<div class="post__thumbnail">				
+					<li>
+						<a class="post" href="<?php the_permalink(); ?>" aria-label="<?php the_title(); ?> 기사보기">
+							<span class="post__category text-xl font-500 font-white"><?php echo $subCategory ?></span>
+							<span class="post__thumbnail">				
 								<img
 									srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
 									src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
 									alt="<?php echo $alt_text ;?>"
 								/>
-							</div>
-							<div class="post__title">
-								<h2 class="text-2xl"><?php the_title(); ?></h2>
-							</div>
-						</article>
-					</a>
+							</span>
+							<span class="post__title text-2xl font-500"><span><?php the_title(); ?></span></span>
+						</a>
+					</li>
 					<?php }
 					wp_reset_postdata();
 					?> 
-				</div>
+				</ul>
 			</div>
 			
 			<div class="article part3 p-top-large">
 				<div class="article__title">
 					<div class="part-logo part-logo--3" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part3.svg'); ?>);"></div>
-					<h1 class="text-5xl font-bold">공감, 함께하다</h1>
+					<h1 class="text-5xl font-bold" id="kead-part3">공감, 함께하다</h1>
 				</div>
-				<div class="article__contents p-top">
+				<ul class="article__contents p-top" aria-labelledby="kead-part3">
 					<?php 
 					$query3 = new WP_Query( $args3 );
 
@@ -179,45 +175,44 @@
 						$subCategory =  get_the_category()[0]->cat_name;
 						$image_id = get_post_thumbnail_id(get_the_ID());
 						$alt_text = get_post_meta($image_id , '_wp_attachment_image_alt', true);?>
-					
-					<a class="post" href="<?php the_permalink(); ?>">
-						<article>
-							<div class="post__category"><span class="text-xl font-500 font-white"><?php echo  $subCategory ?></span></div>
-
+					<li>
+						<a class="post" href="<?php the_permalink(); ?>" aria-label="<?php the_title(); ?> 기사보기">
+							<span class="post__category text-xl font-500 font-white"><?php echo  $subCategory ?></span>
 
 							<?php if ($subCategory === 'KEAD 뉴스' || $subCategory === 'KEAD SNS'): ?>
-							<div class="post__thumbnail">
+							<span class="post__thumbnail">
 								<img
 									srcset="<?php the_post_thumbnail_url('kead-thumbnail-mini') ?>, <?php the_post_thumbnail_url('kead-thumbnail-mini-2x') ?> 2x"
 									src="<?php the_post_thumbnail_url('kead-thumbnail-mini') ?>"
 									alt="<?php echo $alt_text ;?>"
 								/>
-							</div>				
+							</span>				
 							<?php else: ?>
 
-								<div class="post__thumbnail">
+								<span class="post__thumbnail">
 									<img
 										srcset="<?php the_post_thumbnail_url('kead-thumbnail') ?>, <?php the_post_thumbnail_url('kead-thumbnail-2x') ?> 2x"
 										src="<?php the_post_thumbnail_url('kead-thumbnail') ?>"
 										alt="<?php echo $alt_text ;?>"
 										/>
-								</div>
-								<div class="post__title">
-									<h2 class="text-2xl"><?php the_title(); ?></h2>
-								</div>
+								</span>
+
+								<span class="post__title text-2xl font-500"><span><?php the_title(); ?></span></span>
+
 							<?php endif ?>
-						</article>
-					</a>
+
+						</a>
+					</li>
 					<?php }
 					wp_reset_postdata();
 					?> 
-				</div>
+				</ul>
 			</div>
 			
 			<div class="article part4 p-top-large">
 				<div class="article__title">
 					<div class="part-logo part-logo--4" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part4.svg'); ?>);"></div>
-					<h1 class="text-5xl font-bold">EVENT</h1>
+					<h1 class="text-5xl font-bold" id="kead-part4">EVENT</h1>
 				</div>
 				<div class="article__event p-top">
 					<div class="article__event__text">

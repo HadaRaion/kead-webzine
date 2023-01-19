@@ -124,6 +124,13 @@
 				}
 			}
 
+			input:focus-visible,
+			textarea:focus-visible,
+			.wpforms-form button[type='submit']:focus-visible {
+				outline: 4px solid #1b8ffc;
+				outline-offset: 2px;
+			}
+
 			.wpforms-form button[type='submit']:focus,
 			.wpforms-form button[type='submit']:active {
 				background-color: var(--color-part1);
@@ -202,7 +209,8 @@
 					}
 				}
 
-				.wpforms-disclaimer-description {
+				.wpforms-disclaimer-description,
+				.wpforms-field-description {
 					background-color: #e5e4e1;
 					border: 1px solid #000;
 					color: #000;
@@ -250,17 +258,7 @@
 				}
 			}
 
-			.kead-select {
-				.choices.is-open .choices__inner,
-				.choices__inner {
-					border: 1px solid #000;
-					background-color: #e5e4e1;
-					border-radius: 0;
-				}
-			}
-
 			.kead-radio {
-				display: none;
 				ul li label {
 					font-size: 1rem;
 				}

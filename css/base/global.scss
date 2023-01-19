@@ -72,3 +72,10 @@ select {
 	outline: none;
 	font-family: inherit;
 }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+	outline: 4px solid #1b8ffc;
+	outline-offset: 2px;
+}
