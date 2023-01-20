@@ -226,7 +226,7 @@ $args3 = array(
 						<a class="btn btn--sm" href="<?php echo site_url('/february/event'); ?>">이벤트 바로가기</a>
 						<div class="article__event__text__period  p-top">
 						<div class="t-underline text-xl font-bold">이벤트 기간</div>
-						<div class="text-xl p-bottom-xs">2023년 2 1일(수) ~ 2월 20일(월)</div>
+						<div class="text-xl p-bottom-xs">2023년 2월 1일(수) ~ 2월 20일(월)</div>
 						<div class="t-underline text-xl font-bold">당첨자 발표</div>
 						<div class="text-xl p-bottom-small">개별 발송 및 [장애인과 일터] 2월호 이벤트 페이지에 공지</div>
 						</div>
