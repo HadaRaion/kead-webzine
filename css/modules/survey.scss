@@ -140,12 +140,7 @@
 				display: flex;
 				align-self: center;
 				padding: 1rem 0;
-
 				flex-direction: column;
-
-				@include atMedium {
-					// flex-direction: column;
-				}
 
 				label.wpforms-field-label {
 					width: 300px;
@@ -154,11 +149,6 @@
 
 					width: 100%;
 					margin-bottom: 0.5rem;
-
-					@include atMedium {
-						// width: 100%;
-						// margin-bottom: 0.5rem;
-					}
 				}
 
 				input {

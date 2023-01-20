@@ -1,0 +1,19 @@
+.january {
+	.banner {
+		background-position: center 30%;
+	}
+
+	.cover-story {
+		margin-bottom: 10%;
+
+		@include atMedium {
+			margin-bottom: 40%;
+		}
+
+		@include atSmall {
+			margin-bottom: 0%;
+			position: absolute;
+			top: 17%;
+		}
+	}
+}

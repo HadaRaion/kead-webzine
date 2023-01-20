@@ -2,10 +2,13 @@
 	.banner {
 		height: calc(var(--vh, 1vh) * 100);
 		background-size: cover;
-		background-position: center 30%;
 		position: relative;
 		display: flex;
 		align-items: center;
+
+		@include atMedium {
+			height: calc(var(--vh, 1vh) * 100 - var(--header-height));
+		}
 
 		.kead-webzine-logo {
 			position: absolute;
@@ -24,17 +27,6 @@
 
 		.cover-story {
 			width: 100%;
-			margin-bottom: 10%;
-
-			@include atMedium {
-				margin-bottom: 40%;
-			}
-
-			@include atSmall {
-				margin-bottom: 0%;
-				position: absolute;
-				top: 17%;
-			}
 
 			& > h1 {
 				font-size: 4rem;

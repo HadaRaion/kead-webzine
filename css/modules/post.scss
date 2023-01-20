@@ -110,48 +110,6 @@
 
 		.container {
 			position: relative;
-
-			// &::before {
-			// 	content: '';
-			// 	display: block;
-			// 	width: 64px;
-			// 	height: 64px;
-			// 	border-radius: 999em;
-			// 	position: absolute;
-			// 	top: 0;
-			// 	left: -80px;
-			// 	background-size: cover;
-			// 	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 39.58 39.58'%3E%3Cpath d='m18.22 10.48v18.64c0 .45.37.83.83.83.26 0 .71-.26.92-.42l7.22-5.32 4.36-.09c.46-.01.75-.37.75-.83v-7.1c0-.46-.38-.84-.84-.84h-4.33c-.94-.69-6.2-4.94-7.74-5.63-.53-.24-1.18.19-1.18.77m1.6 1.35c.1.07.2.14.29.2.74.52 1.47 1.06 2.19 1.61.79.6 1.58 1.21 2.37 1.82.5.39 1 .8 1.51 1.17.29.21.59.31.95.31h3.57v5.59l-3.54.08c-.34 0-.64.11-.92.31l-6.42 4.73v-15.81Z' style='fill:%23fff%3B'/%3E%3Cpath d='m11 11.4c-2.78 2.5-3.63 5.5-3.71 8.13-.08 2.9 1.16 6.52 3.79 8.71.87.44 1.37-.73.98-1.1-2.49-2.42-3.2-5-3.23-7.32-.04-3.03 1.42-5.7 3.23-7.38.53-.73-.49-1.55-1.06-1.04' style='fill:%23fff%3B'/%3E%3Cpath d='m13.07 13.72c-1.89 1.88-2.51 3.98-2.57 5.85-.07 2.01.72 4.5 2.47 6.34.69.73 1.92.06 1.25-.91-1.65-1.74-2.15-3.54-2.18-5.18-.03-2 .91-3.74 2.16-5.1.54-.85-.49-1.63-1.13-.99' style='fill:%23fff%3B'/%3E%3Cpath d='m15.45 16.06c-1.23 1.14-1.56 2.6-1.59 3.63-.04 1.11.49 2.95 1.57 3.93.84.76 1.76-.21 1.31-.79-.95-1.01-1.33-2.05-1.35-3-.02-1.11.48-2.05 1.25-2.86.6-.63-.38-1.66-1.19-.91' style='fill:%23fff%3B'/%3E%3Crect width='39.58' height='39.58' style='fill:none%3B'/%3E%3C/svg%3E");
-
-			// 	@include atMedium {
-			// 		width: 44px;
-			// 		height: 44px;
-			// 		top: -60px;
-			// 		left: 0px;
-			// 	}
-
-			// 	@include atSmall {
-			// 		width: 32px;
-			// 		height: 32px;
-			// 		top: -40px;
-			// 	}
-			// }
 		}
 	}
-
-	// &.part1 .single-post__contents > .container::before {
-	// 	background-color: var(--color-part1);
-	// }
-
-	// &.part2 .single-post__contents > .container::before {
-	// 	background-color: var(--color-part2);
-	// }
-
-	// &.part3 .single-post__contents > .container::before {
-	// 	background-color: var(--color-part3);
-	// }
-
-	// &.part4 .single-post__contents > .container::before {
-	// 	background-color: var(--color-part4);
-	// }
 }

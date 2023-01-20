@@ -1,0 +1,25 @@
+.february {
+	.banner {
+		background-image: url('../images/banners/banner-february.jpg');
+		background-position: center 30%;
+
+		@include atSmall {
+			background-image: url('../images/banners/banner-february-mobile.jpg');
+			background-position: center bottom;
+		}
+	}
+
+	.cover-story {
+		margin-bottom: 10%;
+
+		@include atMedium {
+			margin-bottom: 40%;
+		}
+
+		@include atSmall {
+			margin-bottom: 0%;
+			position: absolute;
+			top: 20%;
+		}
+	}
+}
