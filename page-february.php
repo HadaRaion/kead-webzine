@@ -233,7 +233,7 @@ $args3 = array(
 
 					</div>
 					<div class="article__event__image">
-						<img src="<?php echo get_theme_file_uri('/images/event-thumb.svg'); ?>" alt="기프티콘 이미지">
+						<img src="<?php echo get_theme_file_uri('/images/event-thumb-february.svg'); ?>" alt="기프티콘 이미지">
 					</div>
 				</div>
 			</div>
