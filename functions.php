@@ -2,8 +2,6 @@
 function kead_files() {
   wp_enqueue_script('main-kead-js', get_theme_file_uri('/build/index.js'), null, '1.0', true);
   wp_enqueue_style('kead_main_styles', get_theme_file_uri('/build/style-index.css'));
-  // wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Noto+Serif+KR:wght@300;400;700&display=swap');
-
   wp_localize_script('main-kead-js', 'keadData', array(
     'root_url' => get_site_url(),
     'nonce' => wp_create_nonce('wp_rest')
