@@ -26,7 +26,7 @@
   );
 ?>
 <main id="contents" class="main-page">
-	<section class="banner" style="background-image: url(<?php echo get_theme_file_uri('/images/banners/banner-' . $post_slug . '.svg'); ?>);">
+	<section class="banner">
 	  <h1 class="kead-webzine-logo">
 			<span class="kead-webzine-logo__title font-white">함께 일하는 세상을 만듭니다</span>
 			<span class="kead-webzine-logo__img">
@@ -34,31 +34,12 @@
 					alt="장애인과 일터 로고">
 			</span>
   	</h1>
-		<div class="cover-story cover-story--desktop font-white t-center">
-				<div class="text-xl t-500">COVER STORY</div>
-				<h1 class="p-top-xs p-bottom-xs">두근두근 ‘새로운 시작이야’</h1>
-				<p class="text-xl t-500">
-					2023년 새해가 밝았습니다.</br>
-					다사다난했던 지난날을 뒤로하고 새로운 한 해에는 부디 행복한 일들만 가득하길 바라는 마음을 담아봅니다.</br>
-					올해는 또 어떤 변화들이 우리를 기다리고 있을까요. 두근두근 희망이 담긴 ‘새로운 시작’을 이야기합니다.
-				</p>
-		</div>
-		<div class="cover-story cover-story--mobile font-white t-center">
-			<div class="text-base t-500">COVER STORY</div>
-			<h1 class="p-top-xs p-bottom-small">두근두근 ‘새로운 시작이야’</h1>
-			<p class="text-base t-500">
-				2023년 새해가 밝았습니다.</br>
-				다사다난했던 지난날을 뒤로하고</br>
-				새로운 한 해에는 부디 행복한 일들만</br>
-				가득하길 바라는 마음을 담아봅니다.</br>
-				올해는 또 어떤 변화들이</br>우리를 기다리고 있을까요.</br>
-				두근두근 희망이 담긴 ‘새로운 시작’을</br>
-				이야기합니다.
-			</p>
-		</div>
+		
+		<?php get_template_part( 'template-parts/banner/content-banner', $post_slug ); ?>
 	</section>
 
 	<p class="text-base p-top-xs t-center">[장애인과 일터]는 텍스트를 자동으로 읽어주는 보이스오버 기능을 지원합니다.</p>
+
 	<section class="main-links p-top">
 		<div class="container">
 			<ul>
@@ -214,26 +195,10 @@
 					<div class="part-logo part-logo--4" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part4.svg'); ?>);"></div>
 					<h1 class="text-5xl font-bold" id="kead-part4">EVENT</h1>
 				</div>
-				<div class="article__event p-top">
-					<div class="article__event__text">
-						<h2 class="text-7xl">웹진 보고 선물 받자</h2>
-						<p class="text-2xl font-bold p-top-small p-bottom-small">
-							2023년 새롭게 시작하는 [장애인과 일터]에서<br />
-							기분 좋은 선물 받아 가세요!
-						</p>
-						<a class="btn btn--sm" href="<?php echo site_url('/january/event'); ?>">이벤트 바로가기</a>
-						<div class="article__event__text__period  p-top">
-						<div class="t-underline text-xl font-bold">이벤트 기간</div>
-						<div class="text-xl p-bottom-xs">2023년 1월 2일(월) ~ 1월 20일(금)</div>
-						<div class="t-underline text-xl font-bold">당첨자 발표</div>
-						<div class="text-xl p-bottom-small">개별 발송 및 [장애인과 일터] 2월호 이벤트 페이지에 공지</div>
-						</div>
 
-					</div>
-					<div class="article__event__image">
-						<img src="<?php echo get_theme_file_uri('/images/event-thumb.svg'); ?>" alt="기프티콘 이미지">
-					</div>
-				</div>
+				<?php get_template_part( 'template-parts/event/content-event', $post_slug ); ?>
+
+
 			</div>
 		</div>
 	</section>
