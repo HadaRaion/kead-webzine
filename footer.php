@@ -45,8 +45,9 @@
       </li>
     </ul>
 
-    <div class="site-footer__wa-mark">
-    </div>
+    <a class="site-footer__wa-mark" title="새창" href="http://www.wa.or.kr/board/list.asp?BoardID=0006" target="_blank">
+      <img class="wa" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)" src="<?php echo get_theme_file_uri('/images/wa-mark.png'); ?>" />
+    </a>
     
     <address class="site-footer__address">
       <p class="text-base">13619 경기도 성남시 분당구 구미로 173번길 59 (구미동)</p>

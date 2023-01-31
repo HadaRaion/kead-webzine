@@ -64,12 +64,11 @@
 	}
 
 	&__wa-mark {
-		aspect-ratio: 17 / 12;
-		background-color: aqua;
+		display: block;
+		aspect-ratio: 4 / 2.84;
 		width: 100px;
 		margin-left: auto;
 
-		display: none;
 		@include atMedium {
 			width: 80px;
 			margin-left: 0;
