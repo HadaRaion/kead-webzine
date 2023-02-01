@@ -89,7 +89,7 @@
             <p class="t-center text-xl p-top-small">
               재미있게 읽은 기사, 편집부에 바라는 점 등<br />
               구독 후기를 남겨 주세요.<br />
-              ‘고민톡 상담툭’과 ‘#공감태그’ 코너 참여도 기다립니다. 
+              ‘고민톡 상담툭’ 코너 참여도 기다립니다. 
             </p>
             <div class="t-center text-base p-bottom-small">※이벤트에 응모하실 분은 내용 하단에 이름과 휴대폰 번호를 기재하셔야 기프티콘을 받으실 수 있습니다.</div>
             <a class="btn btn--sm" href="<?php echo site_url('survey') ?>"><span>의견 남기기</span></a>
