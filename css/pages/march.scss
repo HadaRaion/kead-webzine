@@ -1,0 +1,30 @@
+.march {
+	.banner {
+		background-image: url('../images/banners/banner-march.svg');
+		background-position: center 30%;
+
+		@include atSmall {
+			background-image: url('../images/banners/banner-march-mobile.svg');
+			background-position: center bottom;
+		}
+
+		.kead-webzine-logo__title {
+			color: var(--color-part1);
+		}
+	}
+
+	.cover-story {
+		margin-bottom: 10%;
+		color: var(--color-part1);
+
+		@include atMedium {
+			margin-bottom: 40%;
+		}
+
+		@include atSmall {
+			margin-bottom: 0%;
+			position: absolute;
+			top: 20%;
+		}
+	}
+}
