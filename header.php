@@ -23,7 +23,7 @@
 <!-- 매달교체 -->
 <?php   
   if ( !$args['month'] ):
-    $thisMonth = 'february';
+    $thisMonth = 'march';
   else:
       $thisMonth = $args['month'];
   endif;
