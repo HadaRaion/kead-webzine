@@ -5,7 +5,8 @@
       [장애인과 일터] 기사 읽고 독자 코너 참여하고<br />
       기분 좋은 선물 받아 가세요!
     </p>
-    <a class="btn btn--sm" href="<?php echo site_url('/march/event'); ?>">이벤트 바로가기</a>
+    <!-- Event 링크 교체 -->
+    <a class="btn btn--sm" href="<?php echo site_url('/april/event'); ?>">이벤트 바로가기</a>
     <div class="article__event__text__period  p-top">
     <div class="t-underline text-xl font-bold">이벤트 기간</div>
     <div class="text-xl p-bottom-xs">2023년 4월 3일(월) ~ 4월 21일(금)</div>

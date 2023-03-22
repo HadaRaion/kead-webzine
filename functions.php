@@ -1,7 +1,7 @@
 <?php
 function kead_files() {
   wp_enqueue_script('main-kead-js', get_theme_file_uri('/build/index.js'), null, '1.0', true);
-  wp_enqueue_style('kead_main_styles', get_theme_file_uri('/build/style-index.css'),  '', '20220316');
+  wp_enqueue_style('kead_main_styles', get_theme_file_uri('/build/style-index.css'),  '', '20220322');
   wp_localize_script('main-kead-js', 'keadData', array(
     'root_url' => get_site_url(),
     'nonce' => wp_create_nonce('wp_rest')
