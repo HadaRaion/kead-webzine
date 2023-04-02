@@ -1,6 +1,6 @@
 <?php 
-// 매달 교체
-$thisMonth = 'march';
+// 매달교체
+$thisMonth = 'april';
 
 get_header();
 

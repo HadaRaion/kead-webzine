@@ -10,19 +10,6 @@
 
     <ul class="p-top-small">
       <li class="">
-        <a href="<?php echo site_url('pdf/202212.pdf'); ?>" target="_blank" title="지난호 새창보기">
-          <img
-            srcset="<?php echo get_theme_file_uri('/images/covers/202212.jpg'); ?>, <?php echo get_theme_file_uri('/images/covers/202212@2x.jpg'); ?> 2x"
-            src="<?php echo get_theme_file_uri('/images/covers/202212.jpg'); ?>"
-            alt="2022년 12월호 표지"
-          />
-        </a>
-        <h2 class="text-2xl t-center t-500">
-          [VOL.332]<br />2022년 12월호
-        </h2>
-      </li>
-
-      <li class="">
         <a href="<?php echo site_url('january'); ?>"  target="_blank" title="지난호 새창보기">
           <img
             srcset="<?php echo get_theme_file_uri('/images/covers/cover-january.jpg'); ?>, <?php echo get_theme_file_uri('/images/covers/cover-january@2x.jpg'); ?> 2x"
@@ -45,6 +32,19 @@
         </a>
         <h2 class="text-2xl t-center t-500">
           [VOL.334]<br />2023년 2월호
+        </h2>
+      </li>
+
+      <li class="">
+        <a href="<?php echo site_url('march'); ?>"  target="_blank" title="지난호 새창보기">
+          <img
+            srcset="<?php echo get_theme_file_uri('/images/covers/cover-march.jpg'); ?>, <?php echo get_theme_file_uri('/images/covers/cover-march@2x.jpg'); ?> 2x"
+            src="<?php echo get_theme_file_uri('/images/covers/cover-march.jpg'); ?>"
+            alt="2023년 3월호 표지"
+          />
+        </a>
+        <h2 class="text-2xl t-center t-500">
+          [VOL.335]<br />2023년 3월호
         </h2>
       </li>
       
