@@ -51,7 +51,7 @@
     </ul>
 
     <div class="p-top  p-bottom-large">
-      <a class="btn" href="https://www.kead.or.kr/common/comm_board.jsp?main=99" title="새창에서 보기" target="_blank">
+      <a class="btn" href="https://www.kead.or.kr/bbs/workplace/bbsPage.do?menuId=MENU2023" title="새창에서 보기" target="_blank">
        <span>2023년 이전호 보기</span>
       </a>
     </div>
