@@ -55,8 +55,10 @@
       <p class="text-base">TEL <a href="tel:+82317287257">031-728-7257</a></p>
       <p class="text-base">FAX 050-3470-0022</p>
     </address>
-
-    <p class="text-base">COPYRIGHT &copy; 2023 KEAD RIGHT RESERVED.</p>
+    <span class="site-footer__bottom">
+      <a class="text-base privacy font-bold t-underline" title="새창" href="https://www.kead.or.kr/common/privacyPolicy.do?menuId=MENU1463" target="_blank">개인정보처리방침</a>
+      <p class="text-base">COPYRIGHT &copy; 2023 KEAD RIGHT RESERVED.</p>
+    </span>
   </div>
 </footer>
 
