@@ -1,11 +1,9 @@
 .april {
 	.banner {
 		background-image: url('../images/banners/banner-april.svg');
-		background-position: center bottom;
 
 		@include atSmall {
 			background-image: url('../images/banners/banner-april-mobile.svg');
-			background-position: center bottom;
 		}
 
 		.kead-webzine-logo__title {

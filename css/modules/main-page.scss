@@ -5,6 +5,7 @@
 		position: relative;
 		display: flex;
 		align-items: center;
+		background-position: center bottom;
 
 		@include atMedium {
 			height: calc(var(--vh, 1vh) * 100 - var(--header-height));
