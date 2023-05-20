@@ -1,0 +1,28 @@
+.june {
+	.banner {
+		background-image: url('../images/banners/banner-june.svg');
+
+		@include atSmall {
+			background-image: url('../images/banners/banner-june-mobile.svg');
+		}
+
+		.kead-webzine-logo__title {
+			color: var(--color-part1);
+		}
+	}
+
+	.cover-story {
+		margin-bottom: 10%;
+		color: var(--color-part1);
+
+		@include atMedium {
+			margin-bottom: 40%;
+		}
+
+		@include atSmall {
+			margin-bottom: 0%;
+			position: absolute;
+			top: 20%;
+		}
+	}
+}
