@@ -10,19 +10,6 @@
 
     <ul class="p-top-small">
       <li>
-        <a href="<?php echo site_url('february'); ?>"  target="_blank" title="지난호 새창보기">
-          <img
-            srcset="<?php echo get_theme_file_uri('/images/covers/cover-february.jpg'); ?>, <?php echo get_theme_file_uri('/images/covers/cover-february@2x.jpg'); ?> 2x"
-            src="<?php echo get_theme_file_uri('/images/covers/cover-february.jpg'); ?>"
-            alt="2023년 2월호 표지"
-          />
-        </a>
-        <h2 class="text-2xl t-center t-500">
-          [VOL.334]<br />2023년 2월호
-        </h2>
-      </li>
-
-      <li>
         <a href="<?php echo site_url('march'); ?>"  target="_blank" title="지난호 새창보기">
           <img
             srcset="<?php echo get_theme_file_uri('/images/covers/cover-march.jpg'); ?>, <?php echo get_theme_file_uri('/images/covers/cover-march@2x.jpg'); ?> 2x"
@@ -47,11 +34,24 @@
           [VOL.336]<br />2023년 4월호
         </h2>
       </li>
+
+      <li>
+        <a href="<?php echo site_url('may'); ?>"  target="_blank" title="지난호 새창보기">
+          <img
+            srcset="<?php echo get_theme_file_uri('/images/covers/cover-may.jpg'); ?>, <?php echo get_theme_file_uri('/images/covers/cover-may@2x.jpg'); ?> 2x"
+            src="<?php echo get_theme_file_uri('/images/covers/cover-may.jpg'); ?>"
+            alt="2023년 5월호 표지"
+          />
+        </a>
+        <h2 class="text-2xl t-center t-500">
+          [VOL.337]<br />2023년 5월호
+        </h2>
+      </li>
     </ul>
 
     <div class="p-top  p-bottom-large">
-      <a class="btn" href="https://www.kead.or.kr/bbs/workplace/bbsPage.do?menuId=MENU2023" title="새창에서 보기" target="_blank">
-       <span>2023년 이전호 보기</span>
+      <a class="btn" href="https://www.kead.or.kr/bbs/webzin/bbsPage.do?menuId=MENU2022" title="새창에서 보기" target="_blank">
+       <span>지난 호 웹진 더보기</span>
       </a>
     </div>
   </div>
