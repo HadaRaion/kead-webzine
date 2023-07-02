@@ -1,6 +1,6 @@
 <?php 
 // 매달교체
-$thisMonth = 'July';
+$thisMonth = 'july';
 
 get_header();
 
