@@ -11,7 +11,7 @@
     <div class="t-underline text-xl font-bold">이벤트 기간</div>
     <div class="text-xl p-bottom-xs">2023년 7월 3일(월) ~ 7월 21일(금)</div>
     <div class="t-underline text-xl font-bold">당첨자 발표</div>
-    <div class="text-xl p-bottom-small">개별 발송 및 [장애인과 일터] 7월호 이벤트 페이지에 공지</div>
+    <div class="text-xl p-bottom-small">개별 발송 및 [장애인과 일터] 8월호 이벤트 페이지에 공지</div>
     </div>
 
   </div>
