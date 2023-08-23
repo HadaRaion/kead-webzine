@@ -3,11 +3,11 @@
 /* SASS and Global'ish Stuff */
 @import 'base/mixin';
 @import 'base/variables';
-@import 'base/font.scss';
+@import 'base/font';
 @import 'base/global';
 @import 'base/utility-classes';
-@import 'modules/kead-blocks.scss';
-@import 'modules/kead-post-font.scss';
+@import 'modules/kead-blocks';
+@import 'modules/kead-post-font';
 
 /* BEM Blocks */
 @import 'modules/site-header';
@@ -17,29 +17,30 @@
 @import 'modules/site-side';
 
 /* Common Blocks */
-@import 'modules/btn.scss';
-@import 'modules/skip.scss';
-@import 'modules/hamburger-menu.scss';
-@import 'modules/webzine-logo.scss';
-@import 'modules/banner.scss';
-@import 'modules/audio.scss';
+@import 'modules/btn';
+@import 'modules/skip';
+@import 'modules/hamburger-menu';
+@import 'modules/webzine-logo';
+@import 'modules/banner';
+@import 'modules/audio';
 
 /* Pages */
-@import 'modules/404.scss';
-@import 'modules/previous.scss';
-@import 'modules/subscribe.scss';
-@import 'modules/main-page.scss';
-@import 'modules/post.scss';
-@import 'modules/survey.scss';
-@import 'modules/reviews.scss';
-@import 'modules/consulting.scss';
+@import 'modules/404';
+@import 'modules/previous';
+@import 'modules/subscribe';
+@import 'modules/main-page';
+@import 'modules/post';
+@import 'modules/survey';
+@import 'modules/reviews';
+@import 'modules/consulting';
 
 /* Front Pages */
-@import 'pages/january.scss';
-@import 'pages/february.scss';
-@import 'pages/march.scss';
-@import 'pages/april.scss';
-@import 'pages/may.scss';
-@import 'pages/june.scss';
-@import 'pages/july.scss';
-@import 'pages/august.scss';
+@import 'pages/january';
+@import 'pages/february';
+@import 'pages/march';
+@import 'pages/april';
+@import 'pages/may';
+@import 'pages/june';
+@import 'pages/july';
+@import 'pages/august';
+@import 'pages/september';
