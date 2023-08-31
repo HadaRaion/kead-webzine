@@ -16,14 +16,14 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <?php wp_head(); ?>
 </head>
 
 <!-- 매달교체 -->
 <?php   
   if ( !$args['month'] ):
-    $thisMonth = 'august';
+    $thisMonth = 'september';
 
   else:
       $thisMonth = $args['month'];
@@ -65,7 +65,7 @@
     <a href="#contents" class="skip__link">본문 바로가기</a>
   </div>
 
-  <header class="site-header" >
+  <header class="site-header">
     <div class="container">
       <button class="hamburger-menu" aria-label="메뉴버튼">
         <span></span>
@@ -82,7 +82,7 @@
 
       <!-- 매달교체 -->
       <div class="link-home">
-        <?php if( $thisMonth  === 'august' ): ?>
+        <?php if( $thisMonth  === 'september' ): ?>
         <a href="<?php echo site_url() ?>">
           <span class="link-text visually-hidden">장애인과 일터 홈</span>
         </a>
@@ -104,18 +104,18 @@
         <h1 class="kead-webzine-logo">
           <span class="kead-webzine-logo__title">함께 일하는 세상을 만듭니다</span>
           <span class="kead-webzine-logo__img">
-            <img src="<?php echo get_theme_file_uri('/images/logos/logo-' . $thisMonth . '.svg'); ?>"
-              alt="장애인과 일터 로고">
+            <img src="<?php echo get_theme_file_uri('/images/logos/logo-' . $thisMonth . '.svg'); ?>" alt="장애인과 일터 로고">
           </span>
         </h1>
 
         <div class="nav__left__cover">
           <div class="nav__left__cover__img">
             <img srcset="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '@2x.jpg 2x'); ?>"
-              src="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>" alt="장애인과 일터 표지"/>
+              src="<?php echo get_theme_file_uri('/images/covers/cover-' . $thisMonth . '.jpg'); ?>" alt="장애인과 일터 표지" />
           </div>
           <div class="nav__left__cover__links">
-            <a class="btn btn--sm btn--between" href="<?php echo site_url('pdf/kead-' . $thisMonth . '.pdf'); ?>" target="_blank" title="새창에서 지난호 pdf 열기"> 
+            <a class="btn btn--sm btn--between" href="<?php echo site_url('pdf/kead-' . $thisMonth . '.pdf'); ?>"
+              target="_blank" title="새창에서 지난호 pdf 열기">
               <span>E-BOOK 보기</span>
             </a>
             <a class="btn btn--sm btn--between" href="<?php echo site_url('/subscribe'); ?>">
@@ -132,7 +132,8 @@
       <div class="nav__right">
         <ul class="cat-list">
           <li>
-            <div class="part-logo part-logo--sm part-logo--1" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part1.svg'); ?>);"></div>
+            <div class="part-logo part-logo--sm part-logo--1"
+              style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part1.svg'); ?>);"></div>
             <div class="menu">
               <h2 class="text-2xl">공감, 두드리다</h2>
 
@@ -155,7 +156,8 @@
           </li>
 
           <li>
-            <div class="part-logo part-logo--sm part-logo--2" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part2.svg'); ?>);"></div>
+            <div class="part-logo part-logo--sm part-logo--2"
+              style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part2.svg'); ?>);"></div>
             <div class="menu">
               <h2 class="text-2xl">공감, 만나다</h2>
 
@@ -177,7 +179,8 @@
           </li>
 
           <li>
-            <div class="part-logo part-logo--sm part-logo--3" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part3.svg'); ?>);"></div>
+            <div class="part-logo part-logo--sm part-logo--3"
+              style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part3.svg'); ?>);"></div>
             <div class="menu">
               <h2 class="text-2xl">공감, 함께하다</h2>
 
@@ -199,7 +202,8 @@
           </li>
 
           <li>
-            <div class="part-logo part-logo--sm part-logo--4" style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part4.svg'); ?>);"></div>
+            <div class="part-logo part-logo--sm part-logo--4"
+              style="background-image: url(<?php echo get_theme_file_uri('/images/logos/logo-part4.svg'); ?>);"></div>
             <div class="menu">
               <h2 class="text-2xl">EVENT</h2>
 
