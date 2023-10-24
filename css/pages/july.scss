@@ -1,11 +1,5 @@
 .july {
 	.banner {
-		background-image: url('../images/banners/banner-july.svg');
-
-		@include atSmall {
-			background-image: url('../images/banners/banner-july-mobile.svg');
-		}
-
 		.kead-webzine-logo__title {
 			color: #fff;
 		}

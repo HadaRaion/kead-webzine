@@ -24,7 +24,22 @@ $args3 = array(
 	'orderby' 	=> 'date',
 	'order'   => 'ASC',
 );
+
+	$bgSrc = get_theme_file_uri('/images/banners/banner-' . $thisMonth .'.svg');
+	$bgSrcMobile = $thisMonth === 'january' ? get_theme_file_uri('/images/banners/banner-' . $thisMonth .'.svg') : get_theme_file_uri('/images/banners/banner-' . $thisMonth .'-mobile.svg');
 ?>
+
+<style scoped>
+	.banner {
+		background-image: url('<?php echo $bgSrc; ?>');12
+	}
+
+	@media (max-width: 640px) {
+		.banner {
+			background-image: url('<?php echo $bgSrcMobile; ?>');
+		}
+	}
+</style>
 
 <main id="contents" class="main-page">
   <section class="banner">

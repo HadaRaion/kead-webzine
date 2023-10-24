@@ -1,10 +1,8 @@
 .march {
 	.banner {
-		background-image: url('../images/banners/banner-march.svg');
 		background-position: center 30%;
 
 		@include atSmall {
-			background-image: url('../images/banners/banner-march-mobile.svg');
 			background-position: center bottom;
 		}
 

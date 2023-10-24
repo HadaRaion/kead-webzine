@@ -24,7 +24,24 @@
     'orderby' 	=> 'date',
     'order'   => 'ASC',
   );
+
+	
+	$bgSrc = get_theme_file_uri('/images/banners/banner-' . $post_slug .'.svg');
+	$bgSrcMobile = $post_slug === 'january' ? get_theme_file_uri('/images/banners/banner-' . $post_slug .'.svg') : get_theme_file_uri('/images/banners/banner-' . $post_slug .'-mobile.svg');
 ?>
+
+<style scoped>
+	.banner {
+		background-image: url('<?php echo $bgSrc; ?>');12
+	}
+
+	@media (max-width: 640px) {
+		.banner {
+			background-image: url('<?php echo $bgSrcMobile; ?>');
+		}
+	}
+</style>
+
 <main id="contents" class="main-page">
 	<section class="banner">
 	  <h1 class="kead-webzine-logo">
