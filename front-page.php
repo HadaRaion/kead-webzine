@@ -30,15 +30,15 @@ $args3 = array(
 ?>
 
 <style scoped>
-	.banner {
-		background-image: url('<?php echo $bgSrc; ?>');12
-	}
+.banner {
+  background-image: url('<?php echo $bgSrc; ?>');
+}
 
-	@media (max-width: 640px) {
-		.banner {
-			background-image: url('<?php echo $bgSrcMobile; ?>');
-		}
-	}
+@media (max-width: 640px) {
+  .banner {
+    background-image: url('<?php echo $bgSrcMobile; ?>');
+  }
+}
 </style>
 
 <main id="contents" class="main-page">
