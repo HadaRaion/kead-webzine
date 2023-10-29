@@ -1,6 +1,6 @@
 <?php 
 // 매달교체
-$thisMonth = 'october';
+$thisMonth = 'november';
 
 get_header();
 
