@@ -1,0 +1,22 @@
+.december {
+	.banner {
+		.kead-webzine-logo__title {
+			color: var(--color-part1);
+		}
+	}
+
+	.cover-story {
+		margin-bottom: 10%;
+		color: var(--color-part1);
+
+		@include atMedium {
+			margin-bottom: 40%;
+		}
+
+		@include atSmall {
+			margin-bottom: 0%;
+			position: absolute;
+			top: 20%;
+		}
+	}
+}
