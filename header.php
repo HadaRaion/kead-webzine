@@ -23,7 +23,7 @@
 <!-- 매달교체 -->
 <?php   
   if ( !$args['month'] ):
-    $thisMonth = 'november';
+    $thisMonth = 'december';
 
   else:
       $thisMonth = $args['month'];
@@ -82,7 +82,7 @@
 
       <!-- 매달교체 -->
       <div class="link-home">
-        <?php if( $thisMonth  === 'november' ): ?>
+        <?php if( $thisMonth  === 'december' ): ?>
         <a href="<?php echo site_url() ?>">
           <span class="link-text visually-hidden">장애인과 일터 홈</span>
         </a>
